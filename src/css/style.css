@@ -1,0 +1,212 @@
+@import url(config.css);
+@import url(iconfont.css);
+@import url(./View/nav.css);
+
+/*
+--- 01 字符
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 颜色
+
+- 白色：#f8fcfd
+- 黑色：本#444 中#666 浅#888
+- 深蓝：#a2d2ff
+- 粉蓝：本#bbe5ed    浅#e4f5f8   白：#f8fcfd #FAFDFE
+- 粉蓝对应-粉红：本#EDC3BB
+- 兰花粉红：本#ffafcc    
+
+--- 05 盒子阴影
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 圆角
+
+Default: 9px
+Medium: 11px
+
+--- 07 留白
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #444;
+  /* background-color: #e4f5f8; */
+  background-color: #FAFDFE;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background: none;
+}
+
+/*
+KISSY CSS Reset
+理念：1. reset 的目的不是清除浏览器的默认样式，这仅是部分工作。清除和重置是紧密不可分的。
+2. reset 的目的不是让默认样式在所有浏览器下一致，而是减少默认样式有可能带来的问题。
+3. reset 期望提供一套普适通用的基础样式。但没有银弹，推荐根据具体需求，裁剪和修改后再使用。
+特色：1. 适应中文；2. 基于最新主流浏览器。
+维护：玉伯<lifesinger@gmail.com>, 正淳<ragecarrier@gmail.com>
+ */
+
+/** 清除内外边距 **/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+/* structural elements 结构元素 */
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+/* list elements 列表元素 */
+pre,
+/* text formatting elements 文本格式元素 */
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+/* form elements 表单元素 */
+th,
+td
+
+/* table elements 表格元素 */
+  {
+  margin: 0;
+  padding: 0;
+}
+
+/** 设置默认字体 **/
+body,
+button,
+input,
+select,
+textarea
+
+/* for ie */
+  {
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+
+/* 将斜体扶正 */
+code,
+kbd,
+pre,
+samp {
+  font-family: courier new, courier, monospace;
+}
+
+
+/** 重置列表元素 **/
+ul,
+ol {
+  list-style: none;
+}
+
+
+
+/* for ie6 */
+fieldset,
+img {
+  border: 0;
+}
+
+/* img 搭车：让链接里的 img 无边框 */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  outline: none;
+  color: inherit;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: solid;
+}
+
+/* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+
+/** 重置表格元素 **/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

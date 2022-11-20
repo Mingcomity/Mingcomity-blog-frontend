@@ -1,0 +1,394 @@
+.header {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 1.2rem);
+}
+
+.header-box {
+  /* overflow: hidden; */
+  width: 85%;
+  max-width: 120rem;
+  margin: 0 auto;
+  border-radius: 4rem;
+  background-color: #fafdfe;
+  /* box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.05); */
+  backdrop-filter: blur(7px);
+
+  z-index: 1;
+  position: relative;
+}
+
+.header-fixed {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 8rem;
+}
+
+.header-fixed-handoff {
+  align-self: center;
+  justify-self: start;
+  margin: 0 3.2rem 0 4.8rem;
+}
+
+.header-fixed-logo:link,
+.header-fixed-logo:visited {
+  display: inline-block;
+  font-size: 3.6rem;
+  color: #edc3bb;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header-fixed-nav {
+  align-self: center;
+  justify-self: start;
+  height: 100%;
+}
+
+.header-fixed-nav-items {
+  display: flex;
+  gap: 3.2rem;
+  font-size: 1.8rem;
+  height: 100%;
+}
+
+.header-fixed-nav-item {
+  height: 100%;
+  padding: 0 0.8rem;
+  cursor: pointer;
+  user-select: none;
+  letter-spacing: 0.1rem;
+}
+
+.header-fixed-nav-item > .btn {
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.header-fixed-nav-items .icon-arrow-down {
+  font-size: 1.8rem;
+  margin-left: 0.6rem;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.header-fixed-form {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  background-color: #fff;
+  border-radius: 1000px;
+  box-shadow: 0px 1px 20px -5px #06151810;
+  overflow: hidden;
+}
+
+.header-fixed-form-ipt {
+  width: 18rem;
+  height: 4.5rem;
+  padding: 2rem;
+  font-size: 1.6rem;
+  background-color: #fff;
+}
+
+.header-fixed-form-ipt:focus {
+  outline: none;
+}
+
+.header-fixed-form-btn {
+  width: 8rem;
+  height: 4.5rem;
+  background-color: #a2d2ff;
+  border-left: none;
+  border-radius: 1000px;
+  border: 3px solid #fff;
+  transition: all 0.3s;
+}
+
+.header-fixed-form-btn:hover,
+.header-fixed-form-btn:active {
+  background-color: #85c4ff;
+}
+
+.icon-search {
+  font-size: 3rem;
+  color: #fff;
+}
+
+/* ----------------------------------------------------------------- */
+.header-eject {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%);
+  background-color: #f8fcfd;
+
+  display: none;
+  z-index: -1;
+  border-radius: 0 0 4rem 4rem;
+  overflow: hidden;
+}
+
+/* ----------------------------------------------------------------- */
+
+.header-eject--tab1 {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  padding-top: 4rem;
+  height: 44rem;
+}
+
+.header-eject--tab1-title {
+  display: flex;
+  flex-direction: column;
+  padding: 6.4rem 3.2rem 6.4rem 4.8rem;
+}
+
+.header-eject--tab1-title > .title {
+  font-family: 'ZCOOL XiaoWei';
+  font-size: 4.4rem;
+  line-height: 1.4;
+  letter-spacing: 0.2rem;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header-eject--tab1-title .border {
+  display: inline-block;
+  border-top: 0.8rem solid #85c4ff;
+}
+
+.header-eject--tab1-title > .smallIcons {
+  color: #edc3bb;
+  font-family: Nunito;
+  font-weight: 700;
+  margin-top: 4.8rem;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+}
+
+.header-eject--tab1-text {
+  font-family: 'ZCOOL XiaoWei';
+  padding: 0 6.4rem 6.4rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6.4rem;
+}
+
+.header-eject--tab1-text > .figure {
+  display: flex;
+  padding-top: 4.8rem;
+  gap: 2.4rem;
+}
+
+.header-eject--tab1-text .figure-icons {
+  padding-top: 1.2rem;
+}
+
+.header-eject--tab1-text .iconfont {
+  font-size: 5.2rem;
+  color: #edc3bb;
+}
+
+.header-eject--tab1-text .title {
+  font-size: 2.4rem;
+  line-height: 1.4;
+  letter-spacing: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.header-eject--tab1-text .text {
+  font-size: 1.6rem;
+  color: #888;
+  letter-spacing: -2px;
+}
+
+/* ----------------------------------------------------------------- */
+.header-eject--tab2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 6.4rem 0 4.8rem 0;
+}
+
+.header-eject--tab2-nav,
+.header-eject--tab2-lists,
+.header-eject--tab2-recently {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  max-height: 24rem;
+
+  transition: all 0.3s;
+}
+
+.header-eject--tab2-nav {
+  padding-left: 3.6rem;
+}
+
+.header-eject--tab2-lists {
+  padding-right: 4.8rem;
+}
+
+.header-eject--tab2-recently {
+  padding-right: 4.8rem;
+}
+
+.header-eject--tab2-title {
+  font-family: Nunito;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-left: 1.2rem;
+  color: #666;
+  transition: all 0.3s;
+}
+
+.header-eject--tab2-nav .items,
+.header-eject--tab2-lists .items,
+.header-eject--tab2-recently .items {
+  display: grid;
+  column-gap: 4.8rem;
+  row-gap: 2.4rem;
+}
+
+.header-eject--tab2-nav .items {
+  overflow: auto;
+  grid-template-columns: 1fr;
+}
+
+.header-eject--tab2-lists .items {
+  overflow: auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header-eject--tab2-recently .items {
+  grid-template-columns: 1fr;
+}
+
+.header-eject--tab2-nav .items::-webkit-scrollbar,
+.header-eject--tab2-lists .items::-webkit-scrollbar {
+  overflow: hidden;
+}
+
+.header-eject--tab2-nav .item,
+.header-eject--tab2-lists .item,
+.header-eject--tab2-recently .item {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem 1.2rem;
+  height: 9rem;
+  gap: 1.2rem;
+  user-select: none;
+}
+
+.header-eject--tab2-nav .title,
+.header-eject--tab2-lists .title,
+.header-eject--tab2-recently .title {
+  font-size: 1.8rem;
+}
+
+.header-eject--tab2-nav .text,
+.header-eject--tab2-lists .text,
+.header-eject--tab2-recently .text {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #666;
+}
+
+/* ------------------------------------------------------------------------- */
+/* 导航栏简单变色处理 */
+/* false - 默认状态
+   true - 选中
+   neutrality - 其中一被选中时，其他标签状态
+*/
+
+.header-fixed-nav-item .icon-arrow-down,
+.header-fixed-nav-item .btn {
+  transition: all 0.3s;
+}
+
+.header-fixed-nav-item .btn[data-choose='true'] {
+  color: #a2d2ff;
+}
+
+.header-fixed-nav-item .btn[data-choose='neutrality'] {
+  color: #999;
+}
+
+.header-fixed-nav-item .btn[data-choose='true'] .icon-arrow-down {
+  transform: rotate(0.5turn);
+}
+
+/* ------------------------------------------------------------------------- */
+/* 展开动画 */
+/* false - 默认状态
+   carryOut - 开展动画
+   shutDown - 关闭动画
+*/
+@keyframes nav-carryOut {
+  0% {
+    max-height: 0;
+  }
+
+  100% {
+    max-height: 60rem;
+  }
+}
+
+.header-eject[data-unfold='carryOut'] {
+  will-change: max-height;
+  animation-name: nav-carryOut;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes nav-shutDown {
+  0% {
+    max-height: 60rem;
+  }
+
+  100% {
+    max-height: 0;
+  }
+}
+
+.header-eject[data-unfold='shutDown'] {
+  will-change: auto;
+  animation-name: nav-shutDown;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  /* animation-iteration-count: infinite; */
+}
+
+/* ------------------------------------------------------------------------- */
+/* 展开后-颜色变化 */
+/* false - 默认状态
+   true - 选中
+   neutrality - 其中一被选中时，其他标签状态
+*/
+.header-eject--tab2-nav[data-choose='true'],
+.header-eject--tab2-nav[data-choose='true'] .header-eject--tab2-title,
+.header-eject--tab2-lists[data-choose='true'],
+.header-eject--tab2-lists[data-choose='true'] .header-eject--tab2-title,
+.header-eject--tab2-recently[data-choose='true'],
+.header-eject--tab2-recently[data-choose='true'] .header-eject--tab2-title {
+  color: #000 !important;
+}
+
+.header-eject--tab2-nav[data-choose='neutrality'],
+.header-eject--tab2-nav[data-choose='neutrality'] .header-eject--tab2-title,
+.header-eject--tab2-lists[data-choose='neutrality'],
+.header-eject--tab2-lists[data-choose='neutrality'] .header-eject--tab2-title,
+.header-eject--tab2-recently[data-choose='neutrality'],
+.header-eject--tab2-recently[data-choose='neutrality']
+  .header-eject--tab2-title {
+  color: #999 !important;
+}
+
+.header-eject--tab2-nav .item[data-choose='true'],
+.header-eject--tab2-lists .item[data-choose='true'],
+.header-eject--tab2-recently .item[data-choose='true'] {
+  background-color: #bde0fe;
+  border-radius: 1rem;
+}

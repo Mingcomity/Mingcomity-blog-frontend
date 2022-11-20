@@ -70,7 +70,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       // 以该文件为模板创建文件
-      template: path.resolve(__dirname, '../public/index.html')
+      template: path.resolve(__dirname, '../src/index.html')
     }),
     new ESLintWebpackPlugin({
       // 指定检查文件的根目录

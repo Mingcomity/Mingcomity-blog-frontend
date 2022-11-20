@@ -1,0 +1,47 @@
+.container {
+  /* 1140px */
+  max-width: 140rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: 'Caveat Brush', sans-serif;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.flex--center {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin--top {
+  margin-top: 8rem !important;
+}
+
+.header-nav-btn {
+  border: none;
+}

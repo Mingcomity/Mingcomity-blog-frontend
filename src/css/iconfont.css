@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'iconfont';
+  /* Project id  */
+  src: url('../icons/iconfont.ttf?t=1668569641463') format('truetype');
+}
+
+.iconfont {
+  display: inline-block;
+  font-family: 'iconfont' !important;
+  font-size: 1.6rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-indent:before {
+  content: "\e7f3";
+}
+
+.icon-search:before {
+  content: "\e8ef";
+}
+
+.icon-camera:before {
+  content: "\e7d7";
+}
+
+.icon-HTML:before {
+  content: "\e87d";
+}
+
+.icon-github-fill:before {
+  content: "\e885";
+}
+
+.icon-QQ-circle-fill:before {
+  content: "\e887";
+}
+
+.icon-yun:before {
+  content: "\e6cf";
+}
+
+.icon-arrow-down:before {
+  content: "\e7b2";
+}
+
+.icon-travel:before {
+  content: "\e72b";
+}
+
+.icon-gmail:before {
+  content: "\e95f";
+}
