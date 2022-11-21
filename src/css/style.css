@@ -3,6 +3,7 @@
 @import url(./View/nav.css);
 @import url(./View/home.css);
 @import url(./View/selected.css);
+@import url(./View/latest.css);
 
 /*
 --- 01 字符
@@ -127,7 +128,8 @@ textarea,
 th,
 td
 
-/* table elements 表格元素 */ {
+/* table elements 表格元素 */
+  {
   margin: 0;
   padding: 0;
 }
@@ -139,7 +141,8 @@ input,
 select,
 textarea
 
-/* for ie */ {
+/* for ie */
+  {
   font-family: 'Noto Sans SC', sans-serif;
 }
 

@@ -45,10 +45,37 @@
 .header-nav-btn {
   border: none;
 }
+
 .moveUp-brighten {
+  display: inline-block;
+  width: 100%;
   transition: all 0.3s;
 }
+
 .moveUp-brighten:hover {
   opacity: 0.88;
-  transform: translateY(-5px);
+  transform: translate(0, -5px)
+}
+
+.label {
+  font-size: 1.4rem;
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: 8px;
+}
+
+#vue {
+  background-color: #e7f4f6;
+}
+
+#nodejs {
+  background-color: #fde2e4;
+}
+
+#css {
+  background-color: #cddafd;
+}
+
+#webpack {
+  background-color: #f0efeb;
 }

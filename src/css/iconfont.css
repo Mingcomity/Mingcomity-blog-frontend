@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'iconfont';
   /* Project id  */
-  src: url('../icons/iconfont.ttf?t=1668569641463') format('truetype');
+  src: url('../icons/iconfont.ttf?t=1669022237383') format('truetype');
 }
 
 .iconfont {
@@ -11,14 +11,6 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-indent:before {
-  content: "\e7f3";
-}
-
-.icon-search:before {
-  content: "\e8ef";
 }
 
 .icon-camera:before {
@@ -37,8 +29,16 @@
   content: "\e887";
 }
 
+.icon-search:before {
+  content: "\e8ef";
+}
+
 .icon-yun:before {
   content: "\e6cf";
+}
+
+.icon-gmail:before {
+  content: "\e95f";
 }
 
 .icon-arrow-down:before {
@@ -49,6 +49,14 @@
   content: "\e72b";
 }
 
-.icon-gmail:before {
-  content: "\e95f";
+.icon-menu:before {
+  content: "\e7f4";
+}
+
+.icon-arrow-right:before {
+  content: "\e743";
+}
+
+.icon-arrow-left:before {
+  content: "\e744";
 }

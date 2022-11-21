@@ -58,8 +58,8 @@
                             <h6 class="title">2022年11月</h6>
                             <p class="text">
                               首次开通博客的月份，也是特殊的一个月。也是特殊的一个月。
-                            </p></a
-                          >
+                            </p>
+                          </a>
                         </li>
                       </ul>
                     </div>
@@ -101,8 +101,8 @@
                             <p class="text">
                               首次开通博客的月份，也是特殊的一个月。
                             </p>
-                          </li></a
-                        >
+                          </li>
+                        </a>
                         <li class="item">
                           <h6 class="title">2022年11月</h6>
                           <p class="text">
@@ -334,7 +334,7 @@
         </div> -->
       </div>
     </header>
-    <main>
+    <main class="main">
       <section class="section-home">
         <div class="container">
           <div class="home">
@@ -347,32 +347,142 @@
       </section>
       <section class="section-selected">
         <div class="selected container">
-          <h2 class="selected-title">精选</h2>
-          <a class="moveUp-brighten">
-            <figure class="selected-card">
-              <div class="selected-card-content">
-                <div class="selected-card-content-label">
-                  <span id="vue">vue</span>
+          <header class="selected-header">
+            <h2 class="selected-title">精选</h2>
+          </header>
+          <main class="selected-main">
+            <a class="moveUp-brighten">
+              <figure class="selected-card">
+                <div class="selected-card-content">
+                  <div class="selected-card-content-label">
+                    <span id="vue" class="label">vue</span>
+                  </div>
+                  <figcaption class="selected-card-content-title">
+                    Vue 2 开发笔记
+                  </figcaption>
+                  <time class="selected-card-content-overview">
+                    July 28, 2022 · 6 min
+                  </time>
                 </div>
-                <figcaption class="selected-card-content-title">
-                  Vue 2 开发笔记
-                </figcaption>
-                <p class="selected-card-content-overview">
-                  July 28, 2022 · 6 min
-                </p>
-              </div>
-              <div class="selected-card-img">
-                <!-- <img
-                src="https://assets.website-files.com/62dea978873e15606a3fe181/62e147b7913ebd39ebe68e78_olivia-blog-cover-image-10.jpg"
-                alt=""
-              /> -->
-              </div>
-            </figure></a
-          >
+                <div class="selected-card-img"></div>
+              </figure>
+            </a>
+          </main>
+        </div>
+      </section>
+      <section class="section-latest">
+        <div class="latest container">
+          <header class="latest-header">
+            <h2 class="latest-title">最新</h2>
+            <div class="latest-page">
+              <button class="latest-page-btn" id="latest-page-left">
+                <span class="iconfont icon-arrow-left"></span>
+              </button>
+              <input type="text" value="1" class="latest-page-number"></input>
+              <button class="latest-page-btn" id="latest-page-right">
+                <span class="iconfont icon-arrow-right"></span>
+              </button>
+            </div>
+          </header>
+          <main class="latest-main">
+            <div class="latesr-lists">
+              <a class="moveUp-brighten">
+                <figure class="latesr-list">
+                  <div class="latesr-list-img-box">
+                    <img
+                      src="https://assets.website-files.com/62dea978873e15606a3fe181/62e147cb832f853dcfc2365c_olivia-blog-cover-image-9.jpg"
+                      alt=""
+                      class="latesr-list-img"
+                    />
+                  </div>
+                  <div class="latesr-list-content">
+                    <div class="latesr-list-content-label">
+                      <span id="vue" class="label">vue</span>
+                    </div>
+                    <figcaption class="latesr-list-content-title">
+                      Vue 2 开发笔记
+                    </figcaption>
+                    <time class="latesr-list-content-overview">
+                      July 28, 2022 · 6 min
+                    </time>
+                  </div>
+                </figure>
+              </a>
+
+              <a class="moveUp-brighten">
+                <figure class="latesr-list">
+                  <div class="latesr-list-img">
+                    <img
+                      src="https://assets.website-files.com/62dea978873e15606a3fe181/62e147dc1e81fb3ea19d4014_olivia-blog-cover-image-8.jpg"
+                      alt=""
+                      class="latesr-list-img"
+                    />
+                  </div>
+                  <div class="latesr-list-content">
+                    <div class="latesr-list-content-label">
+                      <span id="nodejs" class="label">Node.js</span>
+                    </div>
+                    <figcaption class="latesr-list-content-title">
+                      Node.js 基础 Express 框架开发
+                    </figcaption>
+                    <time class="latesr-list-content-overview">
+                      July 10, 2022 · 6 min
+                    </time>
+                  </div>
+                </figure>
+              </a>
+
+              <a class="moveUp-brighten">
+                <figure class="latesr-list">
+                  <div class="latesr-list-img">
+                    <img
+                      src="https://assets.website-files.com/62dea978873e15606a3fe181/62e148073c93993db2c91ddf_olivia-blog-cover-image-6.jpg"
+                      alt=""
+                      class="latesr-list-img"
+                    />
+                  </div>
+                  <div class="latesr-list-content">
+                    <div class="latesr-list-content-label">
+                      <span id="css" class="label">css</span>
+                    </div>
+                    <figcaption class="latesr-list-content-title">
+                      网页UI设计基础
+                    </figcaption>
+                    <time class="latesr-list-content-overview">
+                      July 18, 2022 · 8 min
+                    </time>
+                  </div>
+                </figure>
+              </a>
+
+              <a class="moveUp-brighten">
+                <figure class="latesr-list">
+                  <div class="latesr-list-img">
+                    <img
+                      src="https://assets.website-files.com/62dea978873e15606a3fe181/62e147e51d63418950931ce5_olivia-blog-cover-image-7.jpg"
+                      alt=""
+                      class="latesr-list-img"
+                    />
+                  </div>
+                  <div class="latesr-list-content">
+                    <div class="latesr-list-content-label">
+                      <span id="webpack" class="label">Webpack</span>
+                    </div>
+                    <figcaption class="latesr-list-content-title">
+                      Webpack 构建工具
+                    </figcaption>
+                    <time class="latesr-list-content-overview">
+                      July 22, 2022 · 16 min
+                    </time>
+                  </div>
+                </figure>
+              </a>
+            </div>
+          </main>
         </div>
       </section>
     </main>
-    <footer style="height: 1500px; background-color: #e4f5f8"></footer>
+    <footer class="footer"></footer>
     <script>
       // 处理函数
       const one = document.querySelector('#one')

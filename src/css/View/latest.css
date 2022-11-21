@@ -1,0 +1,91 @@
+.section-latest {
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 9.6rem 0;
+}
+
+.latest {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.latest-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latest-title {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.latest-page {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.latest-page-btn .iconfont {
+  padding: 0.2rem 0.4rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.latest-page-number {
+  font-size: 1.6rem;
+  border: none;
+  width: 3rem;
+  text-align: center;
+}
+
+.latest-page-number:focus {
+  outline: navajowhite;
+}
+
+.latesr-lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+  justify-items: stretch;
+}
+
+
+.latesr-list {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 45rem;
+  cursor: pointer;
+}
+
+.latesr-list-img {
+  width: 100%;
+}
+
+.latesr-list-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2.4rem;
+}
+
+.latesr-list-content-title {
+  font-family: ' Noto Serif SC', serif;
+  font-weight: 600;
+  font-size: 3.6rem;
+  line-height: 1.2;
+  letter-spacing: -3px;
+  flex-grow: 1;
+}
+
+.latesr-list-content-overview {
+  align-self: start;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #666;
+}
