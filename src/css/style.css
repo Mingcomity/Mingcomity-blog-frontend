@@ -1,6 +1,7 @@
 @import url(config.css);
 @import url(iconfont.css);
 @import url(./View/nav.css);
+@import url(./View/home.css);
 
 /*
 --- 01 字符
@@ -65,8 +66,6 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #444;
-  /* background-color: #e4f5f8; */
-  background-color: #FAFDFE;
 }
 
 ul,
@@ -127,8 +126,7 @@ textarea,
 th,
 td
 
-/* table elements 表格元素 */
-  {
+/* table elements 表格元素 */ {
   margin: 0;
   padding: 0;
 }
@@ -140,8 +138,7 @@ input,
 select,
 textarea
 
-/* for ie */
-  {
+/* for ie */ {
   font-family: 'Noto Sans SC', sans-serif;
 }
 
@@ -170,14 +167,11 @@ samp {
   font-family: courier new, courier, monospace;
 }
 
-
 /** 重置列表元素 **/
 ul,
 ol {
   list-style: none;
 }
-
-
 
 /* for ie6 */
 fieldset,
