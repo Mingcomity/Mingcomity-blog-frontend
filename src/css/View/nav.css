@@ -1,8 +1,8 @@
 .header {
-  position: fixed;
+  position: sticky;
+  top: 1.2rem;
   width: 100%;
-  left: 50%;
-  transform: translate(-50%, 1.2rem);
+  z-index: 1;
 }
 
 .header-box {
@@ -11,7 +11,6 @@
   max-width: 130rem;
   margin: 0 auto;
   z-index: 10;
-  position: relative;
 }
 
 .header-fixed {
@@ -340,7 +339,6 @@
   animation-name: nav-carryOut;
   animation-duration: 0.8s;
   animation-fill-mode: both;
-  /* animation-iteration-count: infinite; */
 }
 
 @keyframes nav-shutDown {
@@ -358,7 +356,6 @@
   animation-name: nav-shutDown;
   animation-duration: 0.8s;
   animation-fill-mode: both;
-  /* animation-iteration-count: infinite; */
 }
 
 /* ------------------------------------------------------------------------- */

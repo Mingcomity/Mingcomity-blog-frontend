@@ -1,6 +1,6 @@
 .container {
   /* 1140px */
-  max-width: 130rem;
+  max-width: 120rem;
   padding: 0 7.4rem;
   margin: 0 auto;
 }
@@ -44,4 +44,11 @@
 
 .header-nav-btn {
   border: none;
+}
+.moveUp-brighten {
+  transition: all 0.3s;
+}
+.moveUp-brighten:hover {
+  opacity: 0.88;
+  transform: translateY(-5px);
 }
