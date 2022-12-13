@@ -1,0 +1,38 @@
+.section-topic {
+  background-color: #fff;
+  /* border-bottom: 1px solid #f0f0f0; */
+  padding: 9.6rem 0 0 0;
+}
+
+.topic {
+  background-color: #e7f4f6;
+  border-radius: 20px;
+  box-shadow: inset 0 100px 50px -40px rgb(255 255 255),
+    inset 10px 0 100px -10px rgb(255 255 255);
+  padding: 12.8rem;
+}
+
+.topic-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3.2rem;
+}
+
+.topic-content-title {
+  font-family: Noto Serif SC;
+  font-size: 8.6rem;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+
+.topic-content-text {
+  font-family: Work Sans;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  max-width: 70rem;
+}

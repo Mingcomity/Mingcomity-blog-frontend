@@ -1,0 +1,17 @@
+.footer {
+  background-color: #fafafa;
+}
+
+.information {
+  padding: 3.2rem 0;
+  display: grid;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.6rem;
+}
+
+.information a {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}

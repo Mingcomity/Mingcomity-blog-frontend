@@ -1,0 +1,350 @@
+.section-article {
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 0 0 9.6rem;
+}
+
+.article {
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+}
+
+.article-header {
+  padding: 2.4rem;
+
+}
+
+.article-header * {
+  padding: revert;
+}
+
+.article-header a:link,
+.article-header a:visited {
+  font-size: 1.6rem;
+  color: rgb(65, 131, 196);
+  line-height: 1.3;
+}
+
+.article-header a:hover,
+.article-header a:active {
+  text-decoration: revert;
+}
+
+.article-header-nav .icon-arrow-down {
+  display: inline-block;
+  padding-left: 2rem;
+  font-size: 2rem;
+}
+
+.article-header-nav ul {
+  overflow: hidden;
+  line-height: 1.5;
+  transition: all 1s;
+}
+
+.article-header-nav-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.article-header-nav-footer li {
+  display: inline;
+}
+
+.article-header-nav-footer a:link,
+.article-header-nav-footer a:active {
+  font-size: 2.4rem;
+  display: inline-block;
+}
+
+.article-main {
+  padding: 2.4rem;
+  padding-top: 0;
+
+}
+
+.article-main h1 {
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  margin-bottom: 4px;
+  border-bottom: 2px solid #ccc;
+}
+
+.article-main h3,
+.article-main h2,
+.article-main h4,
+.article-main h5,
+.article-main h6 {
+  line-height: 1.5rem;
+  margin-top: 2.2rem;
+  margin-bottom: 4px;
+}
+
+.article-main h2 {
+  font-size: 3.6rem;
+  margin: 40px 10px 20px 0;
+  padding-left: 9px;
+  border-left: 6px solid #ff7e79;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.article-main h3 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.4;
+  margin: 10px 0 15px;
+  padding-top: 10px;
+}
+
+.article-main h4 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.4;
+  margin: 10px 0 10px;
+  padding-top: 10px
+}
+
+.article-main h5,
+.article-main h6 {
+  font-size: 2rem;
+}
+
+.article-main h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.article-main h6 {
+  font-weight: normal;
+  color: #AAA;
+}
+
+.article-main img {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 15px;
+  height: auto;
+}
+
+.article-main dl,
+.article-main ol,
+.article-main ul {
+  list-style: revert;
+  margin: 12px 0;
+  padding-left: 5%;
+  line-height: 1.8;
+}
+
+.article-main dl ol,
+.article-main dl ul,
+.article-main ol ul,
+.article-main ol dl,
+.article-main ul ol,
+.article-main ol dl {
+  margin: 0;
+}
+
+.article-main p {
+  font-size: 1.6rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.article-main a:link,
+.article-main a:visited {
+  color: #f22f27;
+  text-decoration: solid;
+}
+
+.article-main a:hover {
+  color: #f55852;
+  text-decoration: underline;
+}
+
+.article-main a:focus {
+  outline-offset: -2px;
+}
+
+.article-main blockquote {
+  font-size: 1.8rem;
+  font-style: normal;
+  padding: 0.4rem 1.5rem;
+  margin: 1rem 0 1rem;
+  position: relative;
+  line-height: 1.8;
+  text-indent: 0;
+  border: none;
+  color: #888;
+  border-left: 5px solid #ccc;
+}
+
+.article-main blockquote p {
+  margin-bottom: 0;
+}
+
+.article-main strong,
+.article-main dfn {
+  font-weight: 700;
+}
+
+.article-main em,
+.article-main dfn {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.article-main del {
+  text-decoration: line-through;
+}
+
+/*code {font-size:90%;}*/
+
+/*pre {text-align:left; overflow-x: scroll; color: #257fa0; background: #f6f6f6; padding: 10pt 15pt; border-radius: 3px; border: solid 1px #e2e2e2;}*/
+
+.article-main pre {
+  margin: 0 0 1rem;
+  font-size: 1.6rem;
+  line-height: 1.42857;
+  word-break: break-all;
+  word-wrap: break-word;
+  border-radius: 4px;
+  /* white-space: pre-wrap; */
+  display: block;
+  background: #f8f8f8;
+  padding: 10px 20px;
+  border: 2px solid #f0f0f0;
+  margin: 2rem 0;
+  color: #666;
+  font-family: Courier, sans-serif;
+  overflow: auto;
+}
+
+.article-main pre::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.article-main pre::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+.article-main pre::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.article-main pre::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  height: 6px;
+  border-radius: 25px;
+  background-clip: padding-box;
+  background-color: rgba(0, 0, 0, 0.30);
+}
+
+
+.article-main code {
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  padding: 2px 4px;
+  font-size: 90%;
+}
+
+.article-main p>code {
+  color: #c7264e;
+  background-color: #f9f2f4;
+  font-size: 1.4rem;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.article-main figure {
+  overflow: auto;
+  margin: 1rem 0;
+}
+
+.article-main figcaption {
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.article-main figure img {
+  margin-bottom: 0px;
+}
+
+.article-main hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.article-main ol p,
+.article-main ul p {
+  margin-bottom: 0px;
+}
+
+.article-main li {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.article-main ol#footnotes {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  margin-left: 0;
+  border-top: 1px solid #eaeaea;
+  counter-reset: footer-counter;
+  list-style: none;
+  color: #555;
+  padding-left: 5%;
+  margin: 20px 0;
+}
+
+.article-main ol#footnotes li {
+  margin-bottom: 10px;
+  margin-left: 16px;
+  font-weight: 400;
+  line-height: 2;
+  list-style-type: none;
+}
+
+.article-main ol#footnotes li:before {
+  content: counter(footer-counter) ". ";
+  counter-increment: footer-counter;
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+
+.article-main table {
+  width: 100%;
+  font-size: 1.6rem;
+  border-collapse: inherit;
+}
+
+.article-main table>thead>tr {
+  background-color: #f5f5f5;
+}
+
+.article-main table>tbody>tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.article-main td,
+.article-main th {
+  border: 1px solid #555;
+  padding: 1rem;
+}
