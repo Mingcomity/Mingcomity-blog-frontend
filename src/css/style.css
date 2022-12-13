@@ -2,8 +2,12 @@
 @import url(iconfont.css);
 @import url(./View/nav.css);
 @import url(./View/home.css);
-@import url(./View/selected.css);
+@import url(./View/featured.css);
 @import url(./View/latest.css);
+@import url(./View/footer.css);
+@import url(./View/topic.css);
+@import url(./View/repute.css);
+@import url(./View/article.css);
 
 /*
 --- 01 字符
@@ -35,8 +39,8 @@ Large: 1.8
 - 深蓝：#a2d2ff
 - 粉蓝：本#bbe5ed    浅#e4f5f8   白：#f8fcfd #FAFDFE
 - 粉蓝对应-粉红：本#EDC3BB
-- 兰花粉红：本#ffafcc    
-
+- 兰花粉红：本#ffafcc     
+- 粉红：#ffe8e8
 --- 05 盒子阴影
 
 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
@@ -197,7 +201,7 @@ button:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  outline: solid;
+  outline: 1px solid #f0f0f0;
 }
 
 /* 使得表单元素在 ie 下能继承字体大小 */

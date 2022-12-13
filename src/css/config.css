@@ -1,12 +1,14 @@
 .container {
   /* 1140px */
-  max-width: 120rem;
-  padding: 0 7.4rem;
+  width: 85%;
+  max-width: 105.2rem;
+  /* padding: 0 7.4rem; */
   margin: 0 auto;
 }
 
 .logo {
-  font-family: 'Caveat Brush', sans-serif;
+  font-family: Parisienne, serif;
+  font-weight: 500;
 }
 
 .grid {
@@ -42,7 +44,7 @@
   margin-top: 8rem !important;
 }
 
-.header-nav-btn {
+.header-fixed-btn {
   border: none;
 }
 
@@ -64,18 +66,45 @@
   border-radius: 8px;
 }
 
-#vue {
+#Vue {
   background-color: #e7f4f6;
 }
 
-#nodejs {
+#Node\.js {
   background-color: #fde2e4;
 }
 
-#css {
+#CSS {
   background-color: #cddafd;
 }
 
 #webpack {
   background-color: #f0efeb;
+}
+
+#zijie {
+  background-color: #fff1e6;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.scroll::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+.scroll::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  height: 6px;
+  border-radius: 25px;
+  background-clip: padding-box;
+  background-color: rgba(0, 0, 0, 0.30);
 }

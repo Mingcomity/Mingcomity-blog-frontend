@@ -105,15 +105,15 @@ module.exports = {
       // rel: 'prefetch' // prefetch兼容性更差
     })
   ],
-  // 代码分割配置
-  splitChunks: {
-    chunks: 'all' // 对所有模块都进行分割
-    // 其他内容用默认配置即可
-  },
-  // 提取runtime文件
-  runtimeChunk: {
-    name: (entrypoint) => `runtime~${entrypoint.name}` // runtime文件命名规则
-  },
+  // // 代码分割配置
+  // splitChunks: {
+  //   chunks: 'all' // 对所有模块都进行分割
+  //   // 其他内容用默认配置即可
+  // },
+  // // 提取runtime文件
+  // runtimeChunk: {
+  //   name: (entrypoint) => `runtime~${entrypoint.name}` // runtime文件命名规则
+  // },
   // 模式
   mode: 'production',
   devtool: 'source-map'

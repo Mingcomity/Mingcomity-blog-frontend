@@ -1,274 +1,84 @@
 <!DOCTYPE html>
 <html lang="ch">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mingcomity的博客</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Caveat+Brush|Kirang+Haerang|Rancho|Nunito:200,300,700|Roboto:400,700|Work+Sans:400,500,600"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@200;300;400;500;700&family=ZCOOL+XiaoWei&family=Noto+Serif+SC:wght@200;400;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="header-box">
-        <div class="header-fixed">
-          <div class="header-fixed-handoff">
-            <a href="#" class="logo header-fixed-logo">Ming comity</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mingcomity的博客" />
+  <meta name="keywords" content="Mingcomity" />
+  <meta name="robots" content="all" />
+
+  <link rel="shortcut icon" href="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/favicon.ico" />
+
+
+  <title>Mingcomity的博客</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Parisienne|Work+Sans:400" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&family=ZCOOL+XiaoWei&family=Noto+Serif+SC:wght@200;400;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-nav" data-expand="false">
+      <div class="header-nav-handoff">
+        <a href="http://www.mingcomity.cn" class="logo header-fixed-logo">Ming comity</a>
+      </div>
+      <form class="header-nav-form form">
+        <input type="text" class="header-nav-form-ipt header-fixed-btn" placeholder="此为摆设！后续添加！" />
+        <button class="flex--center header-nav-form-btn header-fixed-btn">
+          <span class="iconfont icon-search"></span>
+        </button>
+      </form>
+      <nav class="header-nav-nav scroll">
+        <div>
+          <div class="btn" data-choose="false">
+            <span>文章归档</span>
+            <span class="iconfont icon-arrow-down"></span>
           </div>
-          <nav class="header-fixed-nav flex--center">
-            <ul class="header-fixed-nav-items">
-              <li class="header-fixed-nav-item flex--center">
-                <button class="btn" data-choose="false">
-                  <span>文章归档</span
-                  ><span
-                    class="iconfont icon-arrow-down"
-                    data-choose="false"
-                  ></span>
-                </button>
-                <div class="header-eject" data-unfold="false">
-                  <div class="header-eject--tab2">
-                    <div class="header-eject--tab2-nav" data-choose="true">
-                      <h5 class="header-eject--tab2-title">date</h5>
-                      <ul class="items">
-                        <li>
-                          <a class="item" data-choose="true">
-                            <h6 class="title">2022年11月</h6>
-                            <p class="text">
-                              首次开通博客的月份，也是特殊的一个月。
-                            </p>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div
-                      class="header-eject--tab2-lists"
-                      data-choose="neutrality"
-                    >
-                      <h5 class="header-eject--tab2-title">article</h5>
-                      <ul class="items">
-                        <li>
-                          <a class="item" data-choose="false">
-                            <h6 class="title">2022年11月</h6>
-                            <p class="text">
-                              首次开通博客的月份，也是特殊的一个月。也是特殊的一个月。
-                            </p>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div
-                      class="header-eject--tab2-recently"
-                      data-choose="false"
-                    >
-                      <h5 class="header-eject--tab2-title">recently</h5>
-                      <ul class="items">
-                        <li>
-                          <a class="item" data-choose="true">
-                            <h6 class="title">2022年11月</h6>
-                            <p class="text">
-                              首次开通博客的月份，也是特殊的一个月。
-                            </p>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="header-fixed-nav-item flex--center" id="th">
-                <button class="btn" data-choose="false">
-                  <span>文章分类</span
-                  ><span
-                    class="iconfont icon-arrow-down"
-                    data-choose="false"
-                  ></span>
-                </button>
-                <div class="header-eject" data-unfold="false" id="fo">
-                  <div class="header-eject--tab2">
-                    <div class="header-eject--tab2-nav">
-                      <h5 class="header-eject--tab2-title">date</h5>
-                      <ul class="items">
-                        <a>
-                          <li class="item">
-                            <h6 class="title">2022年11月</h6>
-                            <p class="text">
-                              首次开通博客的月份，也是特殊的一个月。
-                            </p>
-                          </li>
-                        </a>
-                        <li class="item">
-                          <h6 class="title">2022年11月</h6>
-                          <p class="text">
-                            首次开通博客的月份，也是特殊的一个月。
-                          </p>
-                        </li>
-                        <li class="item">
-                          <h6 class="title">2022年11月</h6>
-                          <p class="text">
-                            首次开通博客的月份，也是特殊的一个月。
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="header-eject--tab2-lists">
-                      <h5 class="header-eject--tab2-title">article</h5>
-                      <ul class="items">
-                        <li class="item">
-                          <h6 class="title">2022年11月</h6>
-                          <p class="text">
-                            首次开通博客的月份，也是特殊的一个月。也是特殊的一个月。
-                          </p>
-                        </li>
-                        <li class="item">
-                          <h6 class="title">2022年11月</h6>
-                          <p class="text">
-                            首次开通博客的月份，也是特殊的一个月。
-                          </p>
-                        </li>
-                        <li class="item">
-                          <h6 class="title">2022年11月</h6>
-                          <p class="text">
-                            首次开通博客的月份，也是特殊的一个月。
-                          </p>
-                        </li>
-                        <li class="item">
-                          <h6 class="title">2022年11月</h6>
-                          <p class="text">
-                            首次开通博客的月份，也是特殊的一个月。也是特殊的一个月。
-                          </p>
-                        </li>
-                        <li class="item">
-                          <h6 class="title">2022年11月</h6>
-                          <p class="text">
-                            首次开通博客的月份，也是特殊的一个月。
-                          </p>
-                        </li>
-                        <li class="item">
-                          <h6 class="title">2022年11月</h6>
-                          <p class="text">
-                            首次开通博客的月份，也是特殊的一个月。
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="header-eject--tab2-recently">
-                      <h5 class="header-eject--tab2-title">recently</h5>
-                      <ul class="items">
-                        <li class="item">
-                          <h6 class="title">2022年11月</h6>
-                          <p class="text">
-                            首次开通博客的月份，也是特殊的一个月。
-                          </p>
-                        </li>
-                        <li class="item">
-                          <h6 class="title">2022年11月</h6>
-                          <p class="text">
-                            首次开通博客的月份，也是特殊的一个月。
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="header-fixed-nav-item flex--center" id="one">
-                <button class="btn" data-choose="false">
-                  <span>关于笔者</span
-                  ><span
-                    class="iconfont icon-arrow-down"
-                    data-choose="false"
-                  ></span>
-                </button>
-                <div class="header-eject" data-unfold="false" id="two">
-                  <div class="header-eject--tab1">
-                    <div class="header-eject--tab1-title">
-                      <h2 class="title">
-                        <span class="border">向往</span>星辰与大海的
-                      </h2>
-                      <h2 class="title">互联网民工</h2>
-                      <p class="smallIcons">ming comity</p>
-                    </div>
-                    <div class="header-eject--tab1-text">
-                      <figure class="figure">
-                        <div class="figure-icons">
-                          <span class="iconfont icon-HTML"></span>
-                        </div>
-                        <div class="figure-title">
-                          <figcaption class="title">Web前端</figcaption>
-                          <p class="text">可见即所得的可视化开发，即兴收获感</p>
-                        </div>
-                      </figure>
-                      <figure class="figure">
-                        <div class="figure-icons">
-                          <span class="iconfont icon-camera"></span>
-                        </div>
-                        <div class="figure-title">
-                          <figcaption class="title">摄影</figcaption>
-                          <p class="text">
-                            美好的景色转瞬即逝，星辰的辉光遥不可及
-                          </p>
-                        </div>
-                      </figure>
-                      <figure class="figure">
-                        <div class="figure-icons">
-                          <span class="iconfont icon-travel"></span>
-                        </div>
-                        <div class="figure-title">
-                          <figcaption class="title">旅行</figcaption>
-                          <p class="text">
-                            祖国大好河山风景秀丽，和想的人一起去走一走
-                          </p>
-                        </div>
-                      </figure>
-                      <figure class="figure">
-                        <div class="figure-icons">
-                          <span class="iconfont icon-yun"></span>
-                        </div>
-                        <div>
-                          <figcaption class="title">云</figcaption>
-                          <p class="text" style="opacity: 0">
-                            &nbsp;❤&nbsp;❤&nbsp;❤争取中！
-                          </p>
-                        </div>
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <!-- <li class="header-fixed-nav-item flex--center">
-                <span>联系笔者</span
-                ><span class="iconfont icon-arrow-down"></span>
-              </li> -->
-            </ul>
-          </nav>
-          <form class="header-fixed-form">
-            <input
-              type="text"
-              class="header-fixed-form-ipt header-nav-btn"
-              placeholder="搜索文章"
-            />
-            <button class="flex--center header-fixed-form-btn header-nav-btn">
-              <span class="iconfont icon-search"></span>
-            </button>
-          </form>
+          <ul class="items scroll" data-unfold="true">
+            <li class="item"><a href="">2022年08月</a></li>
+            <li class="item"><a href="">2022年07月</a></li>
+            <li class="item"><a href="">2022年06月</a></li>
+            <li class="item"><a href="">2022年06月</a></li>
+          </ul>
         </div>
-        <!-- <div class="header-eject" style="display: block">
-          <div class="header-eject--tab1">
-            <div class="header-eject--tab1-title">
+        <div>
+          <div class="btn" data-choose="false">
+            <span>文章分类</span>
+            <span class="iconfont icon-arrow-down"></span>
+          </div>
+          <ul class="items scroll" data-unfold="false">
+            <a href="">
+              <li class="item">Vue</li>
+            </a>
+            <a href="">
+              <li class="item">Webpack</li>
+            </a>
+            <a href="">
+              <li class="item">React</li>
+            </a>
+            <a href="">
+              <li class="item">浏览器</li>
+            </a>
+          </ul>
+        </div>
+        <div>
+          <div class="btn" data-choose="false">
+            <span>关于笔者</span>
+            <!-- <span class="iconfont icon-arrow-down" data-choose="false"></span> -->
+          </div>
+          <!-- <div class="eject scroll" data-unfold="false">
+            <div class="eject-title">
               <h2 class="title">
                 <span class="border">向往</span>星辰与大海的
               </h2>
               <h2 class="title">互联网民工</h2>
               <p class="smallIcons">ming comity</p>
             </div>
-            <div class="header-eject--tab1-text">
+            <div class="eject-text">
               <figure class="figure">
                 <div class="figure-icons">
                   <span class="iconfont icon-HTML"></span>
@@ -284,7 +94,9 @@
                 </div>
                 <div class="figure-title">
                   <figcaption class="title">摄影</figcaption>
-                  <p class="text">美好的景色转瞬即逝，星辰的辉光遥不可及</p>
+                  <p class="text">
+                    美好的景色转瞬即逝，星辰的辉光遥不可及
+                  </p>
                 </div>
               </figure>
               <figure class="figure">
@@ -293,7 +105,9 @@
                 </div>
                 <div class="figure-title">
                   <figcaption class="title">旅行</figcaption>
-                  <p class="text">祖国大好河山风景秀丽，和想的人一起去走一走</p>
+                  <p class="text">
+                    祖国大好河山风景秀丽，和想的人一起去走一走
+                  </p>
                 </div>
               </figure>
               <figure class="figure">
@@ -308,235 +122,2941 @@
                 </div>
               </figure>
             </div>
+          </div> -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="header-box">
+      <div class="header-fixed">
+        <div class="header-fixed-handoff">
+          <a href="http://www.mingcomity.cn" class="logo header-fixed-logo">Ming comity</a>
+        </div>
+        <nav class="header-fixed-nav flex--center">
+          <ul class="header-fixed-nav-items">
+            <li class="header-fixed-nav-item flex--center">
+              <div class="btn" data-choose="false">
+                <span>文章归档</span><span class="iconfont icon-arrow-down" data-choose="false"></span>
+              </div>
+              <div class="header-eject" data-unfold="false">
+                <!-- <div class="header-eject--tab2">
+                  <div class="header-eject--tab2-nav" data-choose="false">
+                    <h5 class="header-eject--tab2-title">date</h5>
+                    <ul class="items">
+                      <li>
+                        <a class="item" data-choose="true">
+                          <h6 class="title">2022年11月</h6>
+                          <p class="text">
+                            首次开通博客的月份，也是特殊的一个月。
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-eject--tab2-lists" data-choose="false">
+                    <h5 class="header-eject--tab2-title">article</h5>
+                    <ul class="items">
+                      <li>
+                        <a class="item" data-choose="false">
+                          <h6 class="title">2022年11月</h6>
+                          <p class="text">
+                            首次开通博客的月份，也是特殊的一个月。也是特殊的一个月。
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-eject--tab2-recently" data-choose="false">
+                    <h5 class="header-eject--tab2-title">recently</h5>
+                    <ul class="items">
+                      <li>
+                        <a class="item" data-choose="true">
+                          <h6 class="title">2022年11月</h6>
+                          <p class="text">
+                            首次开通博客的月份，也是特殊的一个月。
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div> -->
+              </div>
+            </li>
+            <li class="header-fixed-nav-item flex--center">
+              <div class="btn" data-choose="false">
+                <span>文章分类</span><span class="iconfont icon-arrow-down" data-choose="false"></span>
+              </div>
+              <div class="header-eject" data-unfold="false">
+                <!-- <div class="header-eject--tab2">
+                  <div class="header-eject--tab2-nav">
+                    <h5 class="header-eject--tab2-title">date</h5>
+                    <ul class="items">
+                      <a>
+                        <li class="item">
+                          <h6 class="title">2022年11月</h6>
+                          <p class="text">
+                            首次开通博客的月份，也是特殊的一个月。
+                          </p>
+                        </li>
+                      </a>
+                      <li class="item">
+                        <h6 class="title">2022年11月</h6>
+                        <p class="text">
+                          首次开通博客的月份，也是特殊的一个月。
+                        </p>
+                      </li>
+                      <li class="item">
+                        <h6 class="title">2022年11月</h6>
+                        <p class="text">
+                          首次开通博客的月份，也是特殊的一个月。
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-eject--tab2-lists">
+                    <h5 class="header-eject--tab2-title">article</h5>
+                    <ul class="items">
+                      <li class="item">
+                        <h6 class="title">2022年11月</h6>
+                        <p class="text">
+                          首次开通博客的月份，也是特殊的一个月。也是特殊的一个月。
+                        </p>
+                      </li>
+                      <li class="item">
+                        <h6 class="title">2022年11月</h6>
+                        <p class="text">
+                          首次开通博客的月份，也是特殊的一个月。
+                        </p>
+                      </li>
+                      <li class="item">
+                        <h6 class="title">2022年11月</h6>
+                        <p class="text">
+                          首次开通博客的月份，也是特殊的一个月。
+                        </p>
+                      </li>
+                      <li class="item">
+                        <h6 class="title">2022年11月</h6>
+                        <p class="text">
+                          首次开通博客的月份，也是特殊的一个月。也是特殊的一个月。
+                        </p>
+                      </li>
+                      <li class="item">
+                        <h6 class="title">2022年11月</h6>
+                        <p class="text">
+                          首次开通博客的月份，也是特殊的一个月。
+                        </p>
+                      </li>
+                      <li class="item">
+                        <h6 class="title">2022年11月</h6>
+                        <p class="text">
+                          首次开通博客的月份，也是特殊的一个月。
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-eject--tab2-recently">
+                    <h5 class="header-eject--tab2-title">recently</h5>
+                    <ul class="items">
+                      <li class="item">
+                        <h6 class="title">2022年11月</h6>
+                        <p class="text">
+                          首次开通博客的月份，也是特殊的一个月。
+                        </p>
+                      </li>
+                      <li class="item">
+                        <h6 class="title">2022年11月</h6>
+                        <p class="text">
+                          首次开通博客的月份，也是特殊的一个月。
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div> -->
+              </div>
+            </li>
+            <li class="header-fixed-nav-item flex--center">
+              <a href="#">
+                <div class="btn" data-choose="false">
+                  <span>关于笔者</span><span class="iconfont icon-arrow-down" data-choose="false"></span>
+                </div>
+              </a>
+              <div class="header-eject" data-unfold="false">
+                <!-- <div class="header-eject--tab1">
+                  <div class="header-eject--tab1-title">
+                    <h2 class="title">
+                      <span class="border">向往</span>星辰与大海的
+                    </h2>
+                    <h2 class="title">互联网民工</h2>
+                    <p class="smallIcons">ming comity</p>
+                  </div>
+                  <div class="header-eject--tab1-text">
+                    <figure class="figure">
+                      <div class="figure-icons">
+                        <span class="iconfont icon-HTML"></span>
+                      </div>
+                      <div class="figure-title">
+                        <figcaption class="title">Web前端</figcaption>
+                        <p class="text">可见即所得的可视化开发，即兴收获感</p>
+                      </div>
+                    </figure>
+                    <figure class="figure">
+                      <div class="figure-icons">
+                        <span class="iconfont icon-camera"></span>
+                      </div>
+                      <div class="figure-title">
+                        <figcaption class="title">摄影</figcaption>
+                        <p class="text">
+                          美好的景色转瞬即逝，星辰的辉光遥不可及
+                        </p>
+                      </div>
+                    </figure>
+                    <figure class="figure">
+                      <div class="figure-icons">
+                        <span class="iconfont icon-travel"></span>
+                      </div>
+                      <div class="figure-title">
+                        <figcaption class="title">旅行</figcaption>
+                        <p class="text">
+                          祖国大好河山风景秀丽，和想的人一起去走一走
+                        </p>
+                      </div>
+                    </figure>
+                    <figure class="figure">
+                      <div class="figure-icons">
+                        <span class="iconfont icon-yun"></span>
+                      </div>
+                      <div>
+                        <figcaption class="title">云</figcaption>
+                        <p class="text" style="opacity: 0">
+                          &nbsp;❤&nbsp;❤&nbsp;❤争取中！
+                        </p>
+                      </div>
+                    </figure>
+                  </div>
+                </div> -->
+              </div>
+            </li>
+            <!-- <li class="header-fixed-nav-item flex--center">
+                <span>联系笔者</span
+                ><span class="iconfont icon-arrow-down"></span>
+              </li> -->
+          </ul>
+        </nav>
+        <form class="header-fixed-form form">
+          <input type="text" class="header-fixed-form-ipt header-fixed-btn" placeholder="此为摆设！后续添加！" name="" />
+          <button class="flex--center header-fixed-form-btn header-fixed-btn">
+            <span class="iconfont icon-search"></span>
+          </button>
+        </form>
+        <div class="header-nav-btn" data-expand="still">
+          <div class="top"></div>
+          <div class="middle">
+            <div class="middle-box"></div>
           </div>
-        </div> -->
-        <!-- <div class="header-eject header-eject--tab2">
-          <div class="header-eject--tab2-nav">
-            <h5 class="header-eject--tab2-title">date</h5>
-            <ul class="items">
-              <li class="item">
-                <a>
-                  <h6 class="title">2022年11月</h6>
-                  <p class="text">首次开通博客的月份，也是特殊的一个月。</p></a
-                >
-              </li>
-              <li class="item">
-                <h6 class="title">2022年11月</h6>
-                <p class="text">首次开通博客的月份，也是特殊的一个月。</p>
-              </li>
-              <li class="item">
-                <h6 class="title">2022年11月</h6>
-                <p class="text">首次开通博客的月份，也是特殊的一个月。</p>
-              </li>
-            </ul>
-          </div>
-          
-        </div> -->
+          <div class="botton"></div>
+        </div>
       </div>
-    </header>
-    <main class="main">
-      <section class="section-home">
-        <div class="container">
-          <div class="home">
-            <div class="home-content">
-              <p class="home-content-text">CREATOR & BLOGGER</p>
-              <h1 class="home-content-title">刘文麟的博客</h1>
-            </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- <section class="section-home">
+      <div class="container">
+        <div class="home">
+          <div class="home-content">
+            <p class="home-content-text">CREATOR & BLOGGER</p>
+            <h1 class="home-content-title">刘文麟的博客</h1>
           </div>
         </div>
-      </section>
-      <section class="section-selected">
-        <div class="selected container">
-          <header class="selected-header">
-            <h2 class="selected-title">精选</h2>
-          </header>
-          <main class="selected-main">
-            <a class="moveUp-brighten">
-              <figure class="selected-card">
-                <div class="selected-card-content">
-                  <div class="selected-card-content-label">
+      </div>
+    </section> -->
+    <!-- <section class="section-topic">
+      <div class="container">
+        <div class="topic">
+          <div class="topic-content">
+            <h1 class="topic-content-title">Vue</h1>
+            <p class="topic-content-text">
+              Vue
+              是一套用于构建用户界面的渐进式JavaScript框架。与其它大型框架不同的是，Vue
+              被设计为可以自底向上逐层应用。Vue
+              的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue
+              也完全能够为复杂的单页应用（SPA）提供驱动。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section class="section-repute">
+      <div class="container">
+        <div class="repute">
+          <div class="repute-content">
+            <div class="repute-content-label">
+              <span id="vue" class="label">vue</span>
+              <span id="webpack" class="label">webpack</span>
+            </div>
+            <h1 class="repute-content-title">Vue2 开发笔记</h1>
+            <p class="repute-content-text">
+              同步黑马 Vue2 课程的学习，为学习过程中所记录的笔记，讲述了 Vue2
+              框架中的常用的语法指令等，包括对 vue-cli
+              脚手架的使用，以及对组件的使用、ESLint的配置，和 Vue-Route
+              的方面知识。
+            </p>
+            <p class="repute-content-overview">July 28, 2022 · 6 min</p>
+          </div>
+          <div class="repute-imgBox">
+            <img
+              src="https://assets.website-files.com/62dea978873e15606a3fe181/62e147b7913ebd39ebe68e78_olivia-blog-cover-image-10.jpg"
+              alt="" class="repute-imgBox-img" />
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section class="section-featured">
+      <div class="featured container">
+        <header class="featured-header">
+          <h2 class="featured-title">精选</h2>
+        </header>
+        <main class="featured-main">
+          <a class="moveUp-brighten" href="vue2.html">
+            <figure class="featured-card">
+              <div class="featured-card-content">
+                <div class="featured-card-content-label">
+                  <span id="vue" class="label">vue</span>
+                </div>
+                <figcaption class="featured-card-content-title">
+                  Vue 2 开发笔记
+                </figcaption>
+                <p class="featured-card-content-overview">
+                  July 28, 2022 · 100 min
+                </p>
+              </div>
+              <div class="featured-card-img-box">
+                <img
+                  src="https://assets.website-files.com/62dea978873e15606a3fe181/62e147b7913ebd39ebe68e78_olivia-blog-cover-image-10.jpg"
+                  alt="" class="featured-card-img">
+              </div>
+            </figure>
+          </a>
+        </main>
+      </div>
+    </section> -->
+    <!-- <section class="section-latest">
+      <div class="latest container">
+        <header class="latest-header">
+          <h2 class="latest-title">最新</h2>
+          <div class="latest-page">
+            <button class="latest-page-btn" id="latest-page-left">
+              <span class="iconfont icon-arrow-left"></span>
+            </button>
+            <input type="text" value="1" class="latest-page-number"></input>
+            <button class="latest-page-btn" id="latest-page-right">
+              <span class="iconfont icon-arrow-right"></span>
+            </button>
+          </div>
+        </header>
+        <main class="latest-main">
+          <div class="latesr-lists">
+            <a class="moveUp-brighten" href="vue2.html">
+              <figure class="latesr-list">
+                <div class="latesr-list-img-box">
+                  <img
+                    src="https://assets.website-files.com/62dea978873e15606a3fe181/62e147cb832f853dcfc2365c_olivia-blog-cover-image-9.jpg"
+                    alt="" class="latesr-list-img" />
+                </div>
+                <div class="latesr-list-content">
+                  <div class="latesr-list-content-label">
                     <span id="vue" class="label">vue</span>
                   </div>
-                  <figcaption class="selected-card-content-title">
+                  <figcaption class="latesr-list-content-title">
                     Vue 2 开发笔记
                   </figcaption>
-                  <time class="selected-card-content-overview">
-                    July 28, 2022 · 6 min
-                  </time>
+                  <p class="latesr-list-content-overview">
+                    July 28, 2022 · 100 min
+                  </p>
                 </div>
-                <div class="selected-card-img"></div>
               </figure>
             </a>
-          </main>
-        </div>
-      </section>
-      <section class="section-latest">
-        <div class="latest container">
-          <header class="latest-header">
-            <h2 class="latest-title">最新</h2>
-            <div class="latest-page">
-              <button class="latest-page-btn" id="latest-page-left">
-                <span class="iconfont icon-arrow-left"></span>
-              </button>
-              <input type="text" value="1" class="latest-page-number"></input>
-              <button class="latest-page-btn" id="latest-page-right">
-                <span class="iconfont icon-arrow-right"></span>
-              </button>
-            </div>
-          </header>
-          <main class="latest-main">
-            <div class="latesr-lists">
-              <a class="moveUp-brighten">
-                <figure class="latesr-list">
-                  <div class="latesr-list-img-box">
-                    <img
-                      src="https://assets.website-files.com/62dea978873e15606a3fe181/62e147cb832f853dcfc2365c_olivia-blog-cover-image-9.jpg"
-                      alt=""
-                      class="latesr-list-img"
-                    />
+            <a class="moveUp-brighten">
+              <figure class="latesr-list">
+                <div class="latesr-list-img-box">
+                  <img
+                    src="https://assets.website-files.com/62dea978873e15606a3fe181/62e147dc1e81fb3ea19d4014_olivia-blog-cover-image-8.jpg"
+                    alt="" class="latesr-list-img" />
+                </div>
+                <div class="latesr-list-content">
+                  <div class="latesr-list-content-label">
+                    <span id="nodejs" class="label">Node.js</span>
                   </div>
-                  <div class="latesr-list-content">
-                    <div class="latesr-list-content-label">
-                      <span id="vue" class="label">vue</span>
-                    </div>
-                    <figcaption class="latesr-list-content-title">
-                      Vue 2 开发笔记
-                    </figcaption>
-                    <time class="latesr-list-content-overview">
-                      July 28, 2022 · 6 min
-                    </time>
+                  <figcaption class="latesr-list-content-title">
+                    Node.js 基础 Express 框架开发
+                  </figcaption>
+                  <p class="latesr-list-content-overview">
+                    July 10, 2022 · 6 min
+                  </p>
+                </div>
+              </figure>
+            </a>
+            <a class="moveUp-brighten">
+              <figure class="latesr-list">
+                <div class="latesr-list-img-box">
+                  <img
+                    src="https://assets.website-files.com/62dea978873e15606a3fe181/62e148073c93993db2c91ddf_olivia-blog-cover-image-6.jpg"
+                    alt="" class="latesr-list-img" />
+                </div>
+                <div class="latesr-list-content">
+                  <div class="latesr-list-content-label">
+                    <span id="css" class="label">css</span>
                   </div>
-                </figure>
-              </a>
+                  <figcaption class="latesr-list-content-title">
+                    网页UI设计基础
+                  </figcaption>
+                  <p class="latesr-list-content-overview">
+                    July 18, 2022 · 8 min
+                  </p>
+                </div>
+              </figure>
+            </a>
+            <a class="moveUp-brighten">
+              <figure class="latesr-list">
+                <div class="latesr-list-img-box">
+                  <img
+                    src="https://assets.website-files.com/62dea978873e15606a3fe181/62e147e51d63418950931ce5_olivia-blog-cover-image-7.jpg"
+                    alt="" class="latesr-list-img" />
+                </div>
+                <div class="latesr-list-content">
+                  <div class="latesr-list-content-label">
+                    <span id="webpack" class="label">Webpack</span>
+                  </div>
+                  <figcaption class="latesr-list-content-title">
+                    Webpack 构建工具
+                  </figcaption>
+                  <p class="latesr-list-content-overview">
+                    July 22, 2022 · 16 min
+                  </p>
+                </div>
+              </figure>
+            </a>
+    </div>
+  </main>
+  </div>
+  </section>  -->
+    <!-- <section class="section-article">
+      <div class="container article">
+        <header class="article-header">
+          <ul class="article-header-nav">
+            <li>
+              <a href="#一.简介及配置">一.简介及配置</a>
 
-              <a class="moveUp-brighten">
-                <figure class="latesr-list">
-                  <div class="latesr-list-img">
-                    <img
-                      src="https://assets.website-files.com/62dea978873e15606a3fe181/62e147dc1e81fb3ea19d4014_olivia-blog-cover-image-8.jpg"
-                      alt=""
-                      class="latesr-list-img"
-                    />
-                  </div>
-                  <div class="latesr-list-content">
-                    <div class="latesr-list-content-label">
-                      <span id="nodejs" class="label">Node.js</span>
-                    </div>
-                    <figcaption class="latesr-list-content-title">
-                      Node.js 基础 Express 框架开发
-                    </figcaption>
-                    <time class="latesr-list-content-overview">
-                      July 10, 2022 · 6 min
-                    </time>
-                  </div>
-                </figure>
-              </a>
+              <ul>
+                <li>
+                  <a href="#1.简介">1.简介</a>
 
-              <a class="moveUp-brighten">
-                <figure class="latesr-list">
-                  <div class="latesr-list-img">
-                    <img
-                      src="https://assets.website-files.com/62dea978873e15606a3fe181/62e148073c93993db2c91ddf_olivia-blog-cover-image-6.jpg"
-                      alt=""
-                      class="latesr-list-img"
-                    />
-                  </div>
-                  <div class="latesr-list-content">
-                    <div class="latesr-list-content-label">
-                      <span id="css" class="label">css</span>
-                    </div>
-                    <figcaption class="latesr-list-content-title">
-                      网页UI设计基础
-                    </figcaption>
-                    <time class="latesr-list-content-overview">
-                      July 18, 2022 · 8 min
-                    </time>
-                  </div>
-                </figure>
-              </a>
+                  <ul>
+                    <li><a href="#1.1什么是vue"> 1.1什么是vue </a></li>
+                    <li><a href="#1.2vue 的特性"> 1.2vue 的特性</a></li>
+                    <li><a href="#1.3MVVM"> 1.3MVVM</a></li>
+                    <li><a href="#1.4MVVM的工作原理"> 1.4MVVM的工作原理</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#2.配置">2.配置</a>
 
-              <a class="moveUp-brighten">
-                <figure class="latesr-list">
-                  <div class="latesr-list-img">
-                    <img
-                      src="https://assets.website-files.com/62dea978873e15606a3fe181/62e147e51d63418950931ce5_olivia-blog-cover-image-7.jpg"
-                      alt=""
-                      class="latesr-list-img"
-                    />
-                  </div>
-                  <div class="latesr-list-content">
-                    <div class="latesr-list-content-label">
-                      <span id="webpack" class="label">Webpack</span>
-                    </div>
-                    <figcaption class="latesr-list-content-title">
-                      Webpack 构建工具
-                    </figcaption>
-                    <time class="latesr-list-content-overview">
-                      July 22, 2022 · 16 min
-                    </time>
-                  </div>
-                </figure>
-              </a>
-            </div>
-          </main>
-        </div>
-      </section>
-    </main>
-    <footer class="footer"></footer>
-    <script>
-      // 处理函数
-      const one = document.querySelector('#one')
-      const two = document.querySelector('#two')
+                  <ul>
+                    <li><a href="#2.1基本使用步骤">2.1基本使用步骤</a></li>
+                    <li><a href="#2.2基本代码与MVVM的对应关系">2.2基本代码与MVVM的对应关系</a></li>
+                    <li><a href="#2.3浏览器配置">2.3浏览器配置</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#二.语法">二.语法</a>
 
-      const th = document.querySelector('#th')
-      const fo = document.querySelector('#fo')
-      function handle() {
-        fo.style.display = 'none'
-        fo.dataset.unfold = 'false'
-        console.log('展开')
-        one.querySelector('.btn').dataset.choose = 'true'
-        two.style.display = 'block'
-        two.dataset.unfold = 'carryOut'
-      }
-      function handle1() {
-        console.log('关闭')
-        one.querySelector('.btn').dataset.choose = 'false'
-        two.dataset.unfold = 'shutDown'
-      }
-      one.addEventListener('mouseenter', handle)
-      one.addEventListener('mouseleave', handle1)
-      two.addEventListener('animationend', function () {
-        if (two.dataset.unfold == 'shutDown') {
-          two.style.display = 'none'
-          two.dataset.unfold = 'false'
-        } else {
-          return
+              <ul>
+                <li>
+                  <a href="#1.vue的指令"> 1. vue的指令 </a>
+
+                  <ul>
+                    <li><a href="#1.1内容渲染指令">1.1内容渲染指令</a></li>
+                    <li><a href="#1.2属性绑定指令">1.2属性绑定指令</a></li>
+                    <li><a href="#1.3事件绑定指令">1.3事件绑定指令</a></li>
+                    <li><a href="#1.4双向绑定命令">1.4双向绑定命令</a></li>
+                    <li><a href="#1.5条件渲染指令">1.5条件渲染指令</a></li>
+                    <li><a href="#1.6列表渲染指令">1.6列表渲染指令</a></li>
+                    <li><a href="#1.7自定义指令">1.7自定义指令</a></li>
+                  </ul>
+                </li>
+                <li><a href="#2.过滤器（Vue3取消）">2.过滤器（Vue3取消）</a></li>
+                <li>
+                  <a href="#3.侦听器">3.侦听器</a>
+
+                  <ul>
+                    <li><a href="#3.1watch 侦听器">3.1watch 侦听器</a></li>
+                    <li><a href="#3.2侦听器的格式">3.2侦听器的格式</a></li>
+                  </ul>
+                </li>
+                <li><a href="#4.计算属性">4.计算属性</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#三.Vue - CLI">三.Vue - CLI</a>
+
+              <ul>
+                <li><a href="#1.安装和使用">1.安装和使用</a></li>
+                <li><a href="#2.vue - cli 项目中目录的构成">2.vue - cli 项目中目录的构成</a></li>
+                <li><a href="#3.vue项目的运行流程">3.vue项目的运行流程</a></li>
+                <li><a href="#4.项目打包">4.项目打包</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#四. Vue 组件">四. Vue 组件</a>
+
+              <ul>
+                <li><a href="#1.组件化开发">1.组件化开发</a></li>
+                <li><a href="#2.vue 组件的组成部分">2.vue 组件的组成部分</a></li>
+                <li><a href="#3.组件之间的父子关系">3.组件之间的父子关系</a></li>
+                <li>
+                  <a href="#4.组件的使用">4.组件的使用</a>
+
+                  <ul>
+                    <li><a href="#4.1注册私有组件">4.1注册私有组件</a></li>
+                    <li><a href="#4.2注册全局组件">4.2注册全局组件</a></li>
+                  </ul>
+                </li>
+                <li><a href="#5.组件的props">5.组件的props</a></li>
+                <li><a href="#6.组件之间的样式冲突问题">6.组件之间的样式冲突问题</a></li>
+                <li><a href="#7.组件的生命周期/生命周期函数">7.组件的生命周期/生命周期函数</a></li>
+                <li><a href="#8.组件之间的数据共享">8.组件之间的数据共享</a></li>
+                <li><a href="#9.ref 引用">9.ref 引用</a></li>
+                <li><a href="#10.动态组件">10.动态组件</a></li>
+                <li><a href="#11.插槽">11.插槽</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#五.ESLint">五.ESLint</a>
+
+              <ul>
+                <li><a href="#1.vue - cli 配置">1.vue - cli 配置</a></li>
+                <li>
+                  <a href="#2. .eslintrc.js">2. .eslintrc.js</a>
+
+                  <ul>
+                    <li><a href="#2.1rules:">2.1rules:</a></li>
+                    <li><a href="#2.2常见规则">2.2常见规则</a></li>
+                  </ul>
+                </li>
+                <li><a href="#3. VScode 配置 ESLint">3. VScode 配置 ESLint</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#六. Vue - Router">六. Vue - Router</a>
+
+              <ul>
+                <li><a href="#1.前端路由的概念与原理">1.前端路由的概念与原理</a></li>
+                <li><a href="#2.安装和配置">2.安装和配置</a>
+                <li>
+                  <a href="#3.常见用法">3.常见用法</a>
+
+                  <ul>
+                    <li><a href="#3.1路由重定向">3.1路由重定向</a></li>
+                    <li><a href="#3.2路由嵌套">3.2路由嵌套</a></li>
+                    <li><a href="#3.3动态路由匹配">3.3动态路由匹配</a></li>
+                    <li><a href="#3.4扩展">3.4扩展</a></li>
+                    <li><a href="#3.5声明式导航 编程式导航">3.5声明式导航 编程式导航</a></li>
+                    <li><a href="#3.6导航守卫">3.6导航守卫</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </header>
+        <main class="article-main">
+
+          <h1>Vue2</h1>
+          <p>官方文档：<a href='https://cn.vuejs.org/' target='_blank' class='url'>https://cn.vuejs.org/</a></p>
+          <h2 id="一.简介及配置">一.简介及配置</h2>
+          <h3 id="1.简介">1.简介</h3>
+          <h4 id="1.1什么是vue">1.1什么是vue</h4>
+          <ol start=''>
+            <li>
+              <p>构建用户界面</p>
+              <ul>
+                <li>用vue往html页面中填充数据，非常的方便</li>
+
+              </ul>
+            </li>
+            <li>
+              <p>框架</p>
+              <ul>
+                <li>框架是一套现成的解决方案，程序员只能遵守框架的规范，去编写自己的业务功能</li>
+                <li>要学习vue，就是在学习vue框架中规定的语法！</li>
+                <li>vue的指令、组件（是对UI结构的复用）、路由、Vuex、vue 组件库</li>
+
+              </ul>
+            </li>
+
+          </ol>
+          <h4 id="1.2vue 的特性">1.2vue 的特性</h4>
+          <ol start=''>
+            <li>
+              <p><u>数据驱动视图</u></p>
+              <ul>
+                <li>数据的变化<strong>会驱动视图</strong>自动更新</li>
+                <li>好处：程序员只管把数据维护好，那么页面结构会被vue自动渲染出来</li>
+
+              </ul>
+              <p><img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220714113025885.png"
+                  referrerpolicy="no-referrer" alt="image-20220714113025885"></p>
+            </li>
+            <li>
+              <p><u>双向数据绑定</u></p>
+              <blockquote>
+                <p>在网页中，from表单负责<strong>采集数据</strong>，Ajax负责<strong>提交数据</strong></p>
+              </blockquote>
+              <p><img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/232022112314.png"
+                  referrerpolicy="no-referrer" alt="image-20220714113421482"></p>
+              <ul>
+                <li>js数据的变化，会被自动渲染到页面上</li>
+                <li>页面上采集的数据发生变化的时候，会被vue自动获取到，并更新到js数据中</li>
+
+              </ul>
+              <blockquote>
+                <p>注意：数据驱动视图和双向数据绑定的底层原理是MVVM</p>
+              </blockquote>
+            </li>
+
+          </ol>
+          <h4 id="1.3MVVM">1.3MVVM</h4>
+          <p><strong>MVVM</strong> 是 vue 实现<strong>数据驱动视图</strong>和<strong>双向数据绑定</strong>的核心原理。MVVM指的是
+            Model、View和ViewModel，它把每个HTML页面都拆分成这三个部分。</p>
+          <ul>
+            <li>Model 表示当前页面渲染时所依赖的数据源。</li>
+            <li>View 表示当前页面所渲染的 DOM 结构。</li>
+            <li>ViewModel 表示 vue 的实例，它是 MVVM 的核心。</li>
+
+          </ul>
+          <p><img
+              src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220714114416545.png"
+              referrerpolicy="no-referrer" alt="image-20220714114416545"></p>
+          <h4 id="1.4MVVM的工作原理">1.4MVVM的工作原理</h4>
+          <p><img
+              src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220714114601867.png"
+              referrerpolicy="no-referrer" alt="image-20220714114601867"></p>
+          <h3 id="2.配置">2.配置</h3>
+          <h4 id="2.1基本使用步骤">2.1基本使用步骤</h4>
+          <ol start=''>
+            <li>导入vue.js 的script脚本文件</li>
+            <li>在页面中声明一个将要被 vue 所控制的 DOM 区域</li>
+            <li>创建 vm 实例对象（ vue 实例对象）</li>
+
+          </ol>
+          <pre><code class='language-html' lang='html'>&lt;body&gt;
+    &lt;!-- 希望vue能够控制这个div --&gt;
+    &lt;div id=&quot;app&quot;&gt;{{ username }}&lt;/div&gt;
+
+    &lt;!-- 1.导入 Vue 的库文件 --&gt;
+    &lt;script src=&quot;./lib/vue-2.6.12.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- 2.创建 vue 的实例对象 --&gt;
+    &lt;script&gt;
+        const vm = new Vue({
+            // el 属性是固定写法，表示当前vm实例要控制页面上的哪个区域，接受的值是一个选择器
+            el: &#39;#app&#39;,
+            // data 对象就是要渲染到页面上的数据
+            data: {
+                username: &#39;zs&#39;,
+            }
+        });
+    &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+          <h4 id="2.2基本代码与MVVM的对应关系">2.2基本代码与MVVM的对应关系</h4>
+          <p><img
+              src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220715121933127.png"
+              referrerpolicy="no-referrer" alt="image-20220715121933127"></p>
+          <h4 id="2.3浏览器配置">2.3浏览器配置</h4>
+          <p>Chrome 浏览器下载 <code>Vue.js devtools</code>扩展程序 </p>
+          <h2 id="二.语法">二.语法</h2>
+          <h3 id="1.vue的指令">1. vue 的指令</h3>
+          <p>1.指令的概念</p>
+          <p><strong>指令</strong> 是 vue 为开发者提供的<strong>模板语法</strong>，用于<strong>辅助开发者渲染页面的基本结构</strong>。</p>
+          <p>&nbsp;</p>
+          <p>vue 中的指令<strong>按照不同的用途</strong>可以分为如下6大类：</p>
+          <ol start=''>
+            <li><u>内容渲染</u>指令</li>
+            <li><u>属性绑定</u>指令</li>
+            <li><u>事件绑定</u>指令</li>
+            <li><u>双向绑定</u>指令</li>
+            <li><u>条件渲染</u>指令</li>
+            <li><u>列表渲染</u>指令</li>
+
+          </ol>
+          <p>&nbsp;</p>
+          <h4 id="1.1内容渲染指令">1.1内容渲染指令</h4>
+          <blockquote>
+            <p>内容渲染指令用来辅助开发者<strong>渲染DOM元素</strong>的<u>文本内容</u>。常用的内容指令有如下3个：</p>
+          </blockquote>
+          <ul>
+            <li>
+              <p>v - text</p>
+              <blockquote>
+                <p>缺点：覆盖元素原有的默认内容</p>
+              </blockquote>
+              <pre><code class='language-html' lang='html'>&lt;p v-text=&#39;username&#39;&gt;&lt;/p&gt;
+&lt;p v-text=&quot;gender&quot;&gt;性别：&lt;/p&gt;
+</code></pre>
+              <p>&nbsp;</p>
+            </li>
+            <li>
+              <p>{{}}</p>
+              <p>vue提供的 <strong>{{}}</strong> 语法，专门用来解决 <strong>v-text</strong> 会覆盖默认文本内容的问题。这种语法的专业名称是 <u>插值表达式</u></p>
+              <p><u>[ 可书写js语句 ]</u></p>
+              <pre><code class='language-html' lang='html'>&lt;p&gt;姓名：{{username}}&lt;/p&gt;
+&lt;p&gt;性别：{{gender}}&lt;/p&gt;
+--------
+&lt;div&gt;1+2的结果是：{{1+2}}&lt;/div&gt;
+&lt;div&gt;{{tips}} 反转的结果是：{{tips.split(&#39;&#39;).reverse().join(&#39;&#39;)}}&lt;/div&gt;
+</code></pre>
+              <p>&nbsp;</p>
+            </li>
+            <li>
+              <p>v - html</p>
+              <p><strong>v - text</strong>
+                指令和<strong>插值表达式</strong>只能渲染<u>纯文本内容</u>。如果要把<u>包含HTML标签的字符串</u>渲染为页面的HTML元素，则需要使用到 v - html 这个指令：</p>
+              <pre><code class='language-html' lang='html'>&lt;div v-html=&quot;info&quot;&gt;&lt;/div&gt;
+
+---------
+
+data: {
+    info: &#39;&lt;h1&gt;123&lt;/h1&gt;&#39;
+}
+</code></pre>
+              <p>&nbsp;</p>
+            </li>
+
+          </ul>
+          <h4 id="1.2属性绑定指令">1.2属性绑定指令</h4>
+          <blockquote>
+            <p>注意:<u>插值表达式</u>只能用在元素的 <strong>内容节点</strong> 中,不能用在 <strong>属性节点</strong> 中</p>
+          </blockquote>
+          <ul>
+            <li>在 vue 中可以使用 <code>v-bind:</code> 指令，为元素的属性动态绑定值；</li>
+            <li>简写是英文的 <code>:</code></li>
+            <li><u>[ 书写js语句 ]</u> 在使用 v-bind 属性绑定期间，如果绑定内容需要进行动态拼接，则字符串的外面应该包裹单引号，例如
+              <code>&lt;div :title=&quot;&#39;box-&#39;+index&quot;&gt;这是一个div&lt;/div&gt;</code>
+            </li>
+
+          </ul>
+          <pre><code class='language-html' lang='html'>&lt;input type=&quot;text&quot; v-bind:placeholder=&quot;tips&quot;&gt;
+&lt;hr&gt;
+&lt;!-- 简写 --&gt;
+&lt;img :src=&quot;photo&quot; alt=&quot;&quot;&gt;
+
+-----------
+</code></pre>
+          <p>&nbsp;</p>
+          <h4 id="1.3事件绑定指令">1.3事件绑定指令</h4>
+          <ol start=''>
+            <li>vue 提供了 <strong>v-on 事件绑定</strong>指令，用来辅助程序员为 DOM 元素添加事件，简写 <code>@</code>。</li>
+            <li>语法格式如下：</li>
+
+          </ol>
+          <pre><code class='language-html' lang='html'>&lt;!-- 在绑定事件处理函数的时候可以使用小括号传递参数 --&gt;
+&lt;!-- v-on ： 可以被简写成 @ --&gt;
+&lt;button v-on:click=&quot;add(2)&quot;&gt;+2&lt;/button&gt;
+&lt;button @click=&quot;sub&quot;&gt;-1&lt;/button&gt;
+
+-------------
+// methods 的作用就是定义事件处理函数
+methods: {
+    // 方法名简写
+    add(n) {
+        // this === vm
+        // vm.count += 1;
+        this.count += n;
+    },
+    sub() {
+        this.count -= 1;
+    }
+}
+</code></pre>
+          <blockquote>
+            <p>注意：原生DOM对象有 <u>onclick</u>、<u>oninput</u>、<u>onkeyup</u>等原生事件，替换为 vue 的事件绑定后，分别为 ：
+              <strong>v-on:click</strong>、<strong>v-on:input</strong>、<strong>v-on:keyup</strong>
+            </p>
+          </blockquote>
+          <p>&nbsp;</p>
+          <p> $event <strong>事件对象：</strong></p>
+          <pre><code class='language-html' lang='html'>&lt;!-- vue 提供内置变量，名字叫做 $event ，它就是原生DOM的事件对象 --&gt;
+&lt;button @click=&quot;add(1,$event)&quot;&gt;+N&lt;/button&gt;
+
+---------
+</code></pre>
+          <p> $event 用于自定义事件（子 -&gt; 父）</p>
+          <pre><code class='language-html' lang='html'>&lt;Counter :num=&quot;item.goods_count&quot; @add=&quot;getNewNum(item,$event)&quot;&gt;&lt;/Counter&gt;
+
+&lt;script&gt;
+...
+getNewNum(item,e) {
+  item.goods_count=e;
+}
+&lt;/script&gt;
+
+-------------------------
+&lt;script&gt;
+methods: {
+  add() {
+    this.$emit(&#39;add&#39;,this.num++)
+  }
+},
+&lt;/script&gt;
+</code></pre>
+          <p> <strong>事件修饰符：</strong></p>
+          <p>
+            在事件处理函数中调用<strong>event.preventDefault()</strong>或<strong>event.stopPropagation()</strong>是非常常见的需求。因此，vue提供了<strong>事件修饰符</strong>的该概念，用来辅助程序员更方便的<strong>对事件的触发进行控制</strong>。常用的有：
+          </p>
+          <figure>
+            <table>
+              <thead>
+                <tr>
+                  <th style='text-align:center;'>事件修饰符</th>
+                  <th style='text-align:center;'>说明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style='text-align:center;'><strong>.prevent</strong></td>
+                  <td style='text-align:center;'><strong>阻止默认行为</strong>(例如：阻止a链接的跳转、阻止表单的提交等)</td>
+                </tr>
+                <tr>
+                  <td style='text-align:center;'><strong>.stop</strong></td>
+                  <td style='text-align:center;'><strong>阻止事件冒泡</strong></td>
+                </tr>
+                <tr>
+                  <td style='text-align:center;'>.capture</td>
+                  <td style='text-align:center;'>以捕获模式触发当前的事件处理函数</td>
+                </tr>
+                <tr>
+                  <td style='text-align:center;'>.once</td>
+                  <td style='text-align:center;'>绑定的事件只触发1次</td>
+                </tr>
+                <tr>
+                  <td style='text-align:center;'>.self</td>
+                  <td style='text-align:center;'>只有在event.target是当前元素对自身时触发事件处理函数</td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+          <p>&nbsp;</p>
+          <pre><code class='language-html' lang='html'>&lt;!-- 事件修饰符 --&gt;
+&lt;a href=&quot;http://www.baidu.com&quot; @click.prevent=&quot;show&quot;&gt;跳转到百度&lt;/a&gt;
+</code></pre>
+          <p>&nbsp;</p>
+          <p><strong>案件修饰符</strong></p>
+          <p>在监听<strong>键盘事件</strong>时，我们经常需要<strong>判断详细的按键</strong>。此时，可以为键盘相关的事件添加<strong>按键修饰符</strong>，例如：</p>
+          <pre><code class='language-html' lang='html'>&lt;!-- 按下esc键清空 --&gt;
+&lt;!-- 按下enter触发Ajax --&gt;
+&lt;input @keyup.esc=&quot;cleaeInput&quot; @keyup.enter=&quot;commitAjax&quot; type=&quot;text&quot;&gt;
+
+--------------
+
+methods: {cleaeInput(e) {}, commitAjax(e) {}}
+</code></pre>
+          <p>&nbsp;</p>
+          <h4 id="1.4双向绑定命令">1.4双向绑定命令</h4>
+          <p>vue 提供了 <strong>v-model 双向数据绑定</strong>指令，用来辅助开发者在<strong>不操作 DOM</strong>
+            的前提下，<strong>快速获取表单的数据</strong>。（只能用在表单元素上）</p>
+          <ol start=''>
+            <li>
+              <p>input 输入框</p>
+              <ul>
+                <li>type=&quot;radio&quot;</li>
+                <li>type=&quot;checkbox&quot;</li>
+                <li>type=&quot;xxxx&quot;</li>
+
+              </ul>
+            </li>
+            <li>
+              <p>textarea</p>
+            </li>
+            <li>
+              <p>select</p>
+              <pre><code class='language-html' lang='html'>&lt;p&gt;用户的名字是：{{username}}&lt;/p&gt;
+&lt;input type=&quot;text&quot; v-model=&quot;username&quot;&gt;
+&lt;hr&gt;
+&lt;select v-model=&quot;city&quot;&gt;
+    &lt;option value=&quot;&quot;&gt;请选择城市&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;广州&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;珠海&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;大理&lt;/option&gt;
+&lt;/select&gt;
+------------
+data: {
+    username: &#39;zs&#39;,
+    city: 3,
+}
+</code></pre>
+            </li>
+
+          </ol>
+          <p><strong>v-model 修饰符</strong></p>
+          <figure>
+            <table>
+              <thead>
+                <tr>
+                  <th style='text-align:center;'>修饰符</th>
+                  <th style='text-align:center;'>作用</th>
+                  <th style='text-align:center;'>实例</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style='text-align:center;'>.number</td>
+                  <td style='text-align:center;'>自动将用户的输入值转为数值类型</td>
+                  <td style='text-align:center;'>&lt;input v-model.number=&quot;age&quot; /&gt;</td>
+                </tr>
+                <tr>
+                  <td style='text-align:center;'>.trim</td>
+                  <td style='text-align:center;'>自动过滤用户输入的首尾空白字符串</td>
+                  <td style='text-align:center;'>&lt;input v-model.trim=&quot;msg&quot; /&gt;</td>
+                </tr>
+                <tr>
+                  <td style='text-align:center;'>.lazy</td>
+                  <td style='text-align:center;'>在”change&quot;时而非“input”实时更新</td>
+                  <td style='text-align:center;'>&lt;input v-model.lazy=&quot;msg&quot; /&gt;</td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+          <h4 id="1.5条件渲染指令">1.5条件渲染指令</h4>
+          <p>条件渲染指令用来辅助开发者按需控制DOM的显示与隐藏。有两个，分别是：</p>
+          <ul>
+            <li>
+              <p>v-if (每次动态创建或移除元素，实现元素的显示和隐藏)</p>
+              <pre><code class='language-html' lang='html'>  &lt;p v-if=&quot;flag&quot;&gt;这是被 v-if 控制的元素&lt;/p&gt;
+</code></pre>
+              <ul>
+                <li>如果刚进入页面时，某些元素默认不需要被展示，而且后期这个元素很可能也不需要被展示出来，此时 v-if 性能更好</li>
+
+              </ul>
+            </li>
+            <li>
+              <p>v-show （动态的为元素添加或移除 <code>display: none</code> 样式，来实现元素的显示和隐藏）</p>
+              <pre><code class='language-html' lang='html'>&lt;p v-show=&quot;flag&quot;&gt;这是被 v-show 控制的元素&lt;/p&gt;
+</code></pre>
+              <ul>
+                <li>如果需要频繁的切换元素的显示状态，用 v-show 性能更好</li>
+
+              </ul>
+            </li>
+
+          </ul>
+          <blockquote>
+            <p>在实际开发中，绝大多数情况，不用考虑性能问题，直接使用 v-if 就好了！！！</p>
+          </blockquote>
+          <ul>
+            <li>
+              <p>v-else </p>
+              <pre><code class='language-html' lang='html'>&lt;p v-if=&quot;flag&quot;&gt;这是被 v-if 控制的元素&lt;/p&gt;
+&lt;p v-else&gt;这是被 v-else 控制的元素&lt;/p&gt;
+</code></pre>
+              <blockquote>
+                <p>注意：v-else 指令必选配合 v-if 指令一起使用，否则它将不会被识别</p>
+              </blockquote>
+            </li>
+            <li>
+              <p>v-else-if </p>
+              <pre><code class='language-html' lang='html'>&lt;p v-if=&quot;type === &#39;A&#39;&quot;&gt;优秀&lt;/p&gt;
+&lt;p v-else-if=&quot;type === &#39;B&#39;&quot;&gt;良好&lt;/p&gt;
+&lt;p v-else-if=&quot;type === &#39;C&#39;&quot;&gt;一般&lt;/p&gt;
+&lt;p v-else&gt;差&lt;/p&gt;
+</code></pre>
+              <blockquote>
+                <p>注意：v-else-if 指令必选配合 v-if 指令一起使用，否则它将不会被识别</p>
+              </blockquote>
+            </li>
+
+          </ul>
+          <h4 id="1.6列表渲染指令">1.6列表渲染指令</h4>
+          <p>vue提供了<strong>v-for</strong>列表指令，用来辅助开发者<strong>基于一个数组来循环渲染一个列表结果</strong>。v-for指令需要使用 <strong>arr in
+              arrs</strong> 形式的特殊语法，其中：</p>
+          <ul>
+            <li>arrs 是<strong>待循环</strong>的数组</li>
+            <li>arr 是<strong>被循环</strong>的每一项 </li>
+
+          </ul>
+          <p><strong>v-for 中的索引</strong></p>
+          <p> v-for 指令还支持一个<strong>可选的</strong>第二个参数，即<strong>当前项的索引</strong>。语法格式为<strong>（arr,index）in arrs</strong>
+          </p>
+          <blockquote>
+            <p>&nbsp;</p>
+          </blockquote>
+          <pre><code class='language-html' lang='html'>&lt;tr v-for=&quot;(arr,index) in list&quot; ：key=&quot;arr.id&quot;&gt;
+    &lt;td&gt;{{index}}&lt;/td&gt;
+    &lt;td&gt;{{arr.id}}&lt;/td&gt;
+    &lt;td&gt;{{arr.name}}&lt;/td&gt;
+&lt;/tr&gt;
+---
+list: [{
+    id: 1,
+    name: &#39;张三&#39;
+}, {
+    id: 2,
+    name: &#39;李四&#39;
+}, {
+    id: 3,
+    name: &#39;王五&#39;
+}]
+</code></pre>
+          <blockquote>
+            <p>注意：v-for 指令中的<u>arr项</u>和<u>index索引</u>都是行参，可以根据需要进行<strong>重命名</strong>。</p>
+          </blockquote>
+          <pre><code class='language-html' lang='html'>&lt;!-- 官方建议:只要用到了v-for 指令,那么一定要绑定一个:key属性 --&gt;
+&lt;!-- 而且,尽量把id 作为key 的值 --&gt;
+&lt;!-- 官方对key的值的类型,是有要求的:字符串或数字类型 --&gt;
+&lt;tr v-for=&quot;(arr,index) in list&quot; :key=&quot;arr.id&quot; :title=&quot;arr.name + index&quot;&gt;
+</code></pre>
+          <p><strong>key的注意事项</strong></p>
+          <ol start=''>
+            <li>key 的值只能是<strong>字符串</strong>或<strong>数字</strong>类型</li>
+            <li>key 的值<strong>必须具有唯一性</strong>（即： key 的值不能重复）</li>
+            <li>建议把<strong>数据项 id 属性的值</strong>作为 key 的值（因为 id 属性具有唯一性）</li>
+            <li>使用 <strong>index 的值</strong>当作 key 的值<strong>没有任何意义</strong>（因为 index 的值不具有唯一性）</li>
+            <li>建议使用 v-for 指令时<strong>一定要指定 key 的值</strong>（既提升性能，又能防止列表状态紊乱）</li>
+
+          </ol>
+          <h4 id="1.7自定义指令">1.7 <strong>自定义指令</strong></h4>
+          <ul>
+            <li>
+              <p><strong>私有</strong>自定义指令</p>
+              <ul>
+                <li>
+                  <p>在每个 vue 组件中，可以在 directives 节点下声明私有自定义指令 。</p>
+                  <p>使用<strong>bind 函数</strong></p>
+                  <pre><code class='language-javascript' lang='javascript'>&lt;h1 v-color&gt;App 根组件&lt;/h1&gt;
+
+
+directives: {
+    color: {
+        // 当指令  第一次  被绑定到元素上的时候，会立即触发 bind 函数
+        // 为绑定到的 HTML 元素设置红色的文字
+        bind(el) {
+            // el 表示当前指令所绑定到的那个 DOM 对象
+            el.style.color = &#39;red&#39;
         }
-      })
+    }
+}
+</code></pre>
+                  <p>使用 <strong>binding.value</strong> 获取指令绑定的值</p>
+                  <pre><code class='language-javascript' lang='javascript'>&lt;h1 v-color=&quot;color&quot;&gt;App 根组件&lt;/h1&gt;
+&lt;p v-color=&quot;&#39;red&#39;&quot;&gt;测试&lt;/p&gt;
 
-      function handle11() {
-        two.style.display = 'none'
-        two.dataset.unfold = 'false'
-        console.log('展开')
-        th.querySelector('.btn').dataset.choose = 'true'
-        fo.style.display = 'block'
-        fo.dataset.unfold = 'carryOut'
-      }
-      function handle12() {
-        console.log('关闭')
-        th.querySelector('.btn').dataset.choose = 'false'
-        fo.dataset.unfold = 'shutDown'
-      }
-      th.addEventListener('mouseenter', handle11)
-      th.addEventListener('mouseleave', handle12)
-      fo.addEventListener('animationend', function () {
-        if (fo.dataset.unfold == 'shutDown') {
-          fo.style.display = 'none'
-          fo.dataset.unfold = 'false'
-        } else {
-          return
+
+data() {
+  return {
+    color:&#39;blue&#39;
+  }
+},
+
+bind(el，binding) {
+   // el 表示当前指令所绑定到的那个 DOM 对象
+   el.style.color = binding.value
+}
+</code></pre>
+                  <blockquote>
+                    <p>注意：bind 函数<strong>只调用 1 次</strong>，<strong>当 DOM 更新时 bind 函数不会被触发</strong>。</p>
+                  </blockquote>
+                  <p><strong>updata</strong> 函数会在<strong>每次 DOM 更新时</strong>被调用</p>
+                  <pre><code class='language-javascript' lang='javascript'>directives: {
+    color: {
+        // 当指令  第一次  被绑定到元素上的时候，会立即触发 bind 函数
+        // 为绑定到的 HTML 元素设置红色的文字
+        bind(el,binding) {
+            // el 表示当前指令所绑定到的那个 DOM 对象
+            el.style.color = binding.value
+        },
+        update(el,binding) {
+            // el 表示当前指令所绑定到的那个 DOM 对象
+            el.style.color = binding.value
         }
-      })
-    </script>
-  </body>
+    }
+}
+</code></pre>
+                </li>
+                <li>
+                  <p>函数<strong>简写</strong></p>
+                  <p>如果 <strong>bind</strong> 和 <strong>update</strong>
+                    函数中的<strong>逻辑完全相同</strong>，则<strong>对象格式</strong>的自定义指令可以简写成<strong>函数格式</strong>：</p>
+                  <pre><code class='language-javascript' lang='javascript'>directives: {
+    color(el,binding) {
+        el.style.color = binding.value
+    }
+}
+</code></pre>
+                </li>
+
+              </ul>
+            </li>
+            <li>
+              <p><strong>全局</strong>自定义指令</p>
+              <ul>
+                <li>
+                  <p>全局共享的自定义指令需要在 <strong>main.js</strong> 通过 “<strong>Vue.directive()</strong>” 进行声明</p>
+                  <pre><code class='language-javascript' lang='javascript'>// 简写
+Vue.directive(&#39;color&#39;,function(el,binding) {
+    el.style.color = binding.value
+})
+
+
+Vue.directive(&#39;color&#39;,{
+    bind(el,binding) {
+       el.style.color = binding.value
+    },
+    update(el,binding) {
+       el.style.color = binding.value
+	}
+})
+</code></pre>
+                  <p>&nbsp;</p>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+          <h3 id="2.过滤器（Vue3取消）">2.过滤器（Vue3取消）</h3>
+          <p><strong>作用</strong>：<strong>过滤器(Filters)</strong>是vue为开发者提供的功能，常用于<strong>文本的格式化</strong>。本质是一个函数。</p>
+          <ul>
+            <li>用在<strong>插值表达式</strong>和<strong>v-bind</strong>属性绑定</li>
+            <li>应该被添加到 JavaScript 表达式的<strong>尾部</strong>，由“<strong>管道符</strong>”进行调用</li>
+
+          </ul>
+          <pre><code class='language-html' lang='html'>&lt;!-- 在双花括号中通过“管道符”调用 capitalize 过滤器，对 message 的值进行格式化 --&gt;
+&lt;p&gt;
+    {{message | capitalize}}
+&lt;/p&gt;
+
+&lt;div v-bind:id=&quot;rawId | formatId&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+          <p>&nbsp;</p>
+          <ul>
+            <li>
+              <p><strong>私有过滤器</strong></p>
+              <ul>
+                <li>
+                  <p>在 <strong>filters</strong> 节点下定义的过滤器，称为“私有过滤器”，因为它只能在当前所控制的 el 区域内使用。</p>
+                </li>
+                <li>
+                  <pre><code class='language-javascript' lang='javascript'>//过滤器函数必选定义到filters节点下(私有过滤器，不共享)
+filters: {
+    // 过滤器函数形参中的 val 永远都是 管道符 前面的那个值
+    cati(val) {
+        const first = val.charAt(0).toUpperCase();
+        const other = val.slice(1);
+        //过滤器中一定要有个返回值
+        return first + other;
+    }
+</code></pre>
+                  <p>&nbsp;</p>
+                </li>
+
+              </ul>
+            </li>
+            <li>
+              <p><strong>全局过滤器</strong></p>
+              <ul>
+                <li>
+                  <p>如果希望在多个vue实例之间共享过滤器，则可以按照如下的格式定义全局过滤器</p>
+                </li>
+                <li>
+                  <pre><code class='language-javascript' lang='javascript'>//Vue.filter() 方法接受两个参数
+// 参1：是全局过滤器的“名字”
+// 参2：是全局过滤器的“处理函数”
+Vue.filter(&#39;capitalize&#39;,(str) =&gt; {
+    return str.charAt(0).toUpperCase() + str.slice(1) + &#39;--&#39;
+})
+
+//须定义到Vue实例之前
+</code></pre>
+                </li>
+
+              </ul>
+            </li>
+            <li>
+              <p>过滤器的传参</p>
+              <ul>
+                <li>
+                  <p>过滤器的本质是 JavaScript函数，因此可以接受参数</p>
+                </li>
+                <li>
+                  <pre><code class='language-javascript' lang='javascript'>&lt;p&gt;
+    {{message | capitalize(arg1,arg2)}}
+&lt;/p&gt;
+
+Vue.filter(&#39;capitalize&#39;,(msg,arg1,arg2) =&gt; {
+    ...
+})
+</code></pre>
+                  <p>&nbsp;</p>
+                </li>
+
+              </ul>
+            </li>
+            <li>
+              <p><strong>注意点</strong>：</p>
+            </li>
+
+          </ul>
+          <ol start=''>
+            <li>要定义到 filters 节点下，本质就是一个函数。</li>
+            <li>在过滤器函数中，一定要有 return 值。</li>
+            <li>在过滤器的形参中，就可以获取到“管道符”前面待处理的那个值。</li>
+            <li>如果全局过滤器和私有过滤器名字一致，此时就按照“就近原则”，调用的是私有过滤器</li>
+            <li>过滤器可连续调用过滤器</li>
+
+          </ol>
+          <h3 id="3.侦听器">3.侦听器</h3>
+          <h4 id="3.1watch 侦听器">3.1watch 侦听器</h4>
+          <ul>
+            <li>watch 侦听器允许开发者<strong>监视数据的变化</strong>，从而针对数据的变化做特定的操作</li>
+
+          </ul>
+          <pre><code class='language-javascript' lang='javascript'>const vm = new Vue({
+    el: &#39;#app&#39;,
+    data: { username: &#39;&#39;},
+    //所有的侦听器都应该放在watch节点下
+    watch: {
+        //侦听器本质上是一个函数，要侦听哪个数据的变化，就把数据名作为方法名即可
+        //新值在前，旧值在后
+        username(newVal, oldVal) {
+            console.log(newVal)
+        }
+        
+        //------------------------------------------------------
+        
+        //对象格式
+        //定义对象格式的侦听器
+        username:{
+            //侦听器的处理函数
+            handler(newVal,oldVal) {
+                  console.log(newVal,oldVal);
+            },
+            //immediate 控制侦听器是否会自动触发
+            //ture 进入页面时自动触发  false 默认值
+            immediate: true
+        }
+    }
+})
+</code></pre>
+          <ul>
+            <li>
+              <p>可用于</p>
+              <ol start=''>
+                <li>
+                  <p>使用 watch 检测用户名是否可用</p>
+                  <pre><code class='language-javascript' lang='javascript'>watch : {
+    //监听 username 值的变化
+    async username(newVal) {
+        if(newVal === &#39;&#39;) return;
+        //使用 axios 发起请求，判断用户名是否可用
+        const { data: res} = await axios.get(&#39;https://www.escook.cn/api/finduser/&#39;+newVal);
+        console.log(res)
+    }
+}
+</code></pre>
+                </li>
+
+              </ol>
+            </li>
+
+          </ul>
+          <h4 id="3.2侦听器的格式">3.2侦听器的格式</h4>
+          <ol start=''>
+            <li>
+              <p>方法格式的侦听器</p>
+              <ul>
+                <li>缺点1：无法在刚进入页面的时候，自动触发！！！</li>
+                <li>缺点2：如果侦听的是一个对象，对象中的属性发送变化，不会触发侦听器！！！</li>
+
+              </ul>
+            </li>
+            <li>
+              <p>对象格式的侦听器</p>
+              <ul>
+                <li>
+                  <p>好处1：可以通过 <strong>immediate</strong> 选项，让侦听器自动触发！！！（默认false）</p>
+                </li>
+                <li>
+                  <p>好处2：可以通过 <strong>deep</strong> 选项，让侦听器深度监听对象中每个属性的变化！！！（默认false）</p>
+                  <pre><code class='language-javascript' lang='javascript'>info: {
+    handler(newVal) {
+       console.log(newVal);
+    },
+	//开启深度监听，只要对象中任何属性变化了，就会触发“对象的监听器”
+    deep: true
+}
+
+//------------------
+
+//监听对象单个属性的变化
+//如果要侦听的是对象的子属性的变化，则必选包裹一层单引号
+&#39;info.username&#39; (newVal) {
+    console.log(newVal);
+}
+</code></pre>
+                </li>
+
+              </ul>
+            </li>
+
+          </ol>
+          <blockquote>
+            <p>优先考虑最简单的用法，如果方法格式够用就不必使用对象格式</p>
+          </blockquote>
+          <h3 id="4.计算属性">4.计算属性</h3>
+          <blockquote>
+            <p>计算属性指的是<strong>通过一系列运算</strong>之后，最终得到一个<strong>属性值</strong>。</p>
+            <p><strong>这个动态计算出来的属性值</strong>可以被模板结构或 methods 方法使用。</p>
+          </blockquote>
+          <pre><code class='language-javascript' lang='javascript'>var vm = new Vue({
+    el: &#39;#app&#39;,
+    data: {
+        r: 0, g: 0, b: 0
+    },
+    computed: {
+        rgb() {
+            return `reb(${this.r},${this.g},${this.b})`
+        }
+    },
+    methods: {
+        show() {
+            console.log(this.rgb)
+        }
+    }
+})
+
+
+// -------------------------------
+&lt;button @click=&quot;show&quot;&gt;按钮&lt;/button&gt; 
+&lt;div class=&quot;box&quot; :style=&quot;{ backgroundColor: rgb}&quot;&gt;
+    {{ rgb}}
+&lt;/div&gt;
+</code></pre>
+          <ul>
+            <li>
+              <p>注意：</p>
+              <ul>
+                <li>
+                  <p>所有的计算属性。都要定义到computed节点之下，要定义成“<strong>方法</strong>格式”，要 <strong>return</strong> 结果</p>
+                </li>
+                <li>
+                  <p>在使用时当作<strong>普通属性</strong>使用</p>
+                  <ul>
+                    <li>在 template 模板结构中可以使用 —— {{}} v-bind</li>
+                    <li>在 methods 方法中，也可以使用 —— this.计算属性的名称</li>
+
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li>
+              <p>好处</p>
+              <ul>
+                <li>实现代码的复用</li>
+                <li>只要计算属性中依赖的数据源变化了，则计算属性会自动重新求值</li>
+
+              </ul>
+            </li>
+
+          </ul>
+          <h2 id="三.Vue - CLI">三.<a href='https://cli.vuejs.org/zh/index.html'>Vue - CLI</a></h2>
+          <ul>
+            <li>
+              <p>扩展</p>
+              <blockquote>
+                <p>Single Page Application 简称 <strong>SPA</strong>，
+                  顾名思义，指的是<strong>一个Web网站中只要唯一的一个HTML页面</strong>，所有的功能都是基于唯一的一个页面内完成的</p>
+              </blockquote>
+            </li>
+
+          </ul>
+          <blockquote>
+            <p>vue - cli 是 Vue.js 开发的标准工具。简化了程序员基于webpack 创建工程化的 Vue 项目的过程</p>
+          </blockquote>
+          <p>中文官网：<a href='https://cli.vuejs.org/zh/' target='_blank' class='url'>https://cli.vuejs.org/zh/</a></p>
+          <h3 id="1.安装和使用">1.安装和使用</h3>
+          <p>vue - cli 是 npm 上的一个<strong>全局包</strong></p>
+          <ol start=''>
+            <li>
+              <p><code>npm install -g @vue/cli</code> 安装</p>
+            </li>
+            <li>
+              <p><code>vue -V</code> 检测当前版本</p>
+            </li>
+            <li>
+              <p><code>vue create 项目名称</code> 快速生成工程化的Vue项目</p>
+              <p><img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220906171933596.png"
+                  referrerpolicy="no-referrer" alt="image-20220906171933596"></p>
+              <blockquote>
+                <p>优先选择自定义项目设置</p>
+              </blockquote>
+            </li>
+            <li>
+              <p><img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220906172814410.png"
+                  referrerpolicy="no-referrer" alt="image-20220906172814410"></p>
+              <blockquote>
+                <ul>
+                  <li>项1：选择 Vue 版本【空格选中】</li>
+                  <li>项2：Babel 解决兼容性问题，自动配置【空格选中】</li>
+                  <li>项3：微软的脚本语言TS</li>
+                  <li>项4：渐进式的 Web 框架</li>
+                  <li>项5：路由</li>
+                  <li>项6：Vuex</li>
+                  <li>项7：CSS 预处理器（如Less）【空格选中】</li>
+                  <li>项8：约束团队的代码风格【可暂不选】，代码风格错误则不可允许项目</li>
+                  <li>项9-10：单元测试，对组件等测试</li>
+
+                </ul>
+              </blockquote>
+            </li>
+            <li>
+              <p><img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220906173002711.png"
+                  referrerpolicy="no-referrer" alt="image-20220906173002711"></p>
+            </li>
+            <li>
+              <p><img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220906173140553.png"
+                  referrerpolicy="no-referrer" alt="image-20220906173140553"></p>
+            </li>
+            <li>
+              <p>询问如 Babel，ESLint，etc等插件的配置文件是放在独立文件，还是和package.json中一起？<img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220906173330062.png"
+                  referrerpolicy="no-referrer" alt="image-20220906173330062"></p>
+            </li>
+            <li>
+              <p>是否将此次设置存为预设？<img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220906173637940.png"
+                  referrerpolicy="no-referrer" alt="image-20220906173637940"></p>
+            </li>
+            <li>
+              <p>使用 pnpm 还是 npm<img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220906173838073.png"
+                  referrerpolicy="no-referrer" alt="image-20220906173838073"></p>
+            </li>
+            <li>
+              <p>处理过程中用 ctrl + c 解冻<img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220906174044778.png"
+                  referrerpolicy="no-referrer" alt="image-20220906174044778"></p>
+              <p><code>cd demo-first</code> 切换到项目根目录</p>
+              <p><code>npm run serve</code> 运行项目</p>
+            </li>
+
+          </ol>
+          <h3 id="2.vue - cli 项目中目录的构成">2.vue - cli 项目中目录的构成</h3>
+          <ul>
+            <li>
+              <p>src - assets</p>
+              <ul>
+                <li>文件夹，存放项目中用到的静态资源文件，例如：CSS 样式表、图片资源</li>
+
+              </ul>
+            </li>
+            <li>
+              <p>src - components</p>
+              <ul>
+                <li>文件夹，封装的、可复用的组件，都要放到 components 目录下</li>
+
+              </ul>
+            </li>
+            <li>
+              <p>src - main.js</p>
+              <ul>
+                <li>项目的<strong>入口文件</strong>。整个项目的运行，要先执行 main.js</li>
+
+              </ul>
+            </li>
+            <li>
+              <p>src - App.vue</p>
+              <ul>
+                <li>项目的<strong>根组件</strong></li>
+
+              </ul>
+            </li>
+
+          </ul>
+          <h3 id="3.vue项目的运行流程">3. vue 项目的运行流程</h3>
+          <blockquote>
+            <p>通过 main.js 把 App.vue 渲染到 index.html 的指定区域中</p>
+          </blockquote>
+          <ol start=''>
+            <li><strong>App.vue</strong> 用来编写待渲染的<strong>模板结构</strong></li>
+            <li><strong>index.html</strong> 中需要预留一个 <strong>el 区域</strong></li>
+            <li><strong>main.js</strong> 把 App.vue 渲染到了 index.html 所预留的区域中</li>
+
+          </ol>
+          <ul>
+            <li>main.js</li>
+
+          </ul>
+          <pre><code class='language-javascript' lang='javascript'>// 导入 vue 包，得到 Vue 构造函数
+import Vue from ‘vue&#39;
+
+// 导入 App.vue 等组件，将 App.vue 等组件的模板结构渲染到 HTML 页面中
+import App from &#39;./App.vue&#39;
+
+// 插件 Vue 的实例对象
+new Vue({
+    // 把 render 函数指定的组件，渲染到 HTML 页面中
+    // render 函数中渲染的是哪个 .vue ，哪个就是根组件
+    render: h =&gt; h(Test)
+}).$mount(&#39;#app&#39;)
+
+// Vue 实例的 $mount() 方法，作用和 el 属性完全一样！
+</code></pre>
+          <h3 id="4.项目打包">4.项目打包</h3>
+          <blockquote>
+            <p>注意配置 vue - cli 文件,项目打包时默认是以发布到服务器为标准,故打包后是无法双击打开的,但是可以通过 vue-cli 进行配置</p>
+          </blockquote>
+          <p>&nbsp;</p>
+          <h2 id="四. Vue 组件">四. Vue 组件</h2>
+          <h3 id="1.组件化开发">1.组件化开发</h3>
+          <blockquote>
+            <p>根据封装的思想，把页面上<strong>可重用的 UI 结构封装</strong>为组件，从而方便项目的开发和维护</p>
+          </blockquote>
+          <ul>
+            <li>vue 是一个支持组件化开发的前端框架</li>
+            <li>vue 中规定，组件的后缀名是 <strong>.vue</strong> 。之前接触到的 App.vue 文件本质上就是一个 vue 的组件</li>
+
+          </ul>
+          <h3 id="2.vue 组件的组成部分">2. vue 组件的组成部分</h3>
+          <ul>
+            <li><strong>template</strong> -&gt; 组件的<strong>模板结构</strong></li>
+            <li><strong>script</strong> -&gt; 组件的 <strong>JavaScript 行为</strong></li>
+            <li><strong>style</strong> -&gt; 组件的<strong>样式</strong></li>
+
+          </ul>
+          <pre><code class='language-html' lang='html'>&lt;!-- template 中只能出现一个根元素 --&gt;
+&lt;template&gt;
+	&lt;div class=&quot;test-box&quot;&gt;
+        &lt;h3&gt;
+            这是用户自定义的 Test.vue ---{{ username }}
+        &lt;/h3&gt;
+        &lt;button @click=&#39;changeName&#39;&gt;
+            修改用户名
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;!--
+    &lt;div&gt;
+        报错
+    &lt;/div&gt;
+   --&gt;
+&lt;/template&gt;
+
+
+&lt;script&gt;
+    //默认导出。固定写法
+	export default { 
+    	// data 数据源
+        // 注意： .vue 组件中的 data 不能像之前一样，不能指向对象
+        // 注意： 组件中的 data 必选是个函数
+        data() {
+            // 这个 return 出去的 { } 中，可以定义数据
+            return {
+                username: &#39;zs&#39;,
+            } 
+        },
+        // 
+        methods: {
+            changeName() {
+                //在组件中，this 表示当前组件的实例对象
+                this.username = &#39;哇哈哈&#39;
+            }
+        },
+        // 当前组件的侦听器
+        watch: {},
+        // 当前组件的计算属性
+        computed: {},
+        // 过滤器
+        filters: {}
+    }
+&lt;/script&gt;
+
+
+&lt;!-- 启用less --&gt;
+&lt;style lang=&quot;less&quot;&gt;
+    .test-box {
+        background-color: pink;
+        h3 {
+            color: red;
+        }
+    }
+&lt;/style&gt;
+
+
+</code></pre>
+          <h3 id="3.组件之间的父子关系">3.组件之间的父子关系</h3>
+          <ul>
+            <li>组件在被封装好之后，<strong>彼此之间是互相独立的</strong>，不存在父子关系</li>
+            <li>在<strong>使用组件</strong>的时候，<strong>根据彼此的嵌套关系</strong>，形成了<u>父子关系，兄弟关系</u></li>
+
+          </ul>
+          <p><img
+              src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220907095159868.png"
+              referrerpolicy="no-referrer" alt="image-20220907095159868"></p>
+          <h3 id="4.组件的使用">4.组件的使用</h3>
+          <h4 id="4.1注册私有组件">4.1注册 <strong>私有组件</strong></h4>
+          <ol start=''>
+            <li>
+              <p>使用 import 语法 <strong>导入需要的组件</strong></p>
+              <p><img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220907095540930.png"
+                  alt="image-20220907095540930" style="zoom: 33%;" /></p>
+            </li>
+            <li>
+              <p>使用 <strong>components</strong> 节点注册组件</p>
+              <p><img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220907095754284.png"
+                  alt="image-20220907095754284" style="zoom:33%;" /></p>
+            </li>
+            <li>
+              <p>以<strong>标签形式</strong>使用刚才注册的组件</p>
+              <p><img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220907095826703.png"
+                  alt="image-20220907095826703" style="zoom:33%;" /></p>
+              <pre><code class='language-javascript' lang='javascript'>// App.vue 
+
+components: { 
+  // 如果在“声明组件”的时候，没有为组件指定 name 名称,则组件的名称默认就是“注册时候的名称”
+  Left, 
+  Right 
+  // 以上的叫做 ‘注册名称’
+} ,
+    
+// Right.vue
+    
+export default {
+  // 当提供了 name 属性的时候，组件的名称（vue 的调试工具里）就是 name 的值
+  name:&#39;MyRight&#39;
+  // 以上的叫 ‘name名称’
+}
+</code></pre>
+              <blockquote>
+                <p><strong>注册名称</strong>：以标签的形式把注册好的组件，渲染和使用到页面结构之中；</p>
+                <p><strong>name 名称</strong>：在调试工具内看到的名称；结合&lt;keep-alive&gt; 标签来实现组件缓存功能；</p>
+                <p><strong>推荐</strong>在实际开发中，都给已使用的组件<strong>提供 name 名称</strong>，便于自己管理。</p>
+              </blockquote>
+            </li>
+
+          </ol>
+          <blockquote>
+            <p><a
+                href='https://blog.csdn.net/battledao/article/details/123853872?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=path%20autocomplete配置vscode&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-123853872.nonecase&amp;spm=1018.2226.3001.4187'>Path
+                Autocomplete（@路径提示的插件）的配置</a></p>
+          </blockquote>
+          <ul>
+            <li>
+              <p>注意</p>
+              <ul>
+                <li>
+                  <p>通过 components 注册的是 <strong><u>私有子组件</u></strong></p>
+                  <ul>
+                    <li>例：在 <strong>组件A</strong> 的 components 节点下，注册了 <strong>组件F</strong>，则 组件F 只能用在 组件A 中；不能被用在
+                      <strong>组件C</strong> 中。
+                    </li>
+
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+          <p>&nbsp;</p>
+          <h4 id="4.2注册全局组件">4.2注册 <strong>全局组件</strong></h4>
+          <p>在 vue 项目的 <strong>main.js</strong> 入口文件中，通过 <strong>Vue.component()</strong> 方法，可以注册全局组件</p>
+          <pre><code class='language-javascript' lang='javascript'>// 导入需要注册的全局组件
+import Count from &#39;@/.....&#39;
+
+// 参1：字符串格式，表示组件的“注册名称”
+// 参2：需要被注册的那个组件
+Vue.component(&#39;MyCount&#39;,Count)
+</code></pre>
+          <h3 id="5.组件的props">5.组件的 props</h3>
+          <blockquote>
+            <p>props 是组件的中的自定义属性，在封装通用组件时，合理的使用 props 可以极大的提高组件的复用性！</p>
+          </blockquote>
+          <pre><code class='language-javascript' lang='javascript'>export default {
+    // 组件的自定义属性，其中定义的数据可在模板结构中使用
+    // 无法定义初始值
+    props:[&#39;自定义属性A&#39;,&#39;自定义属性B...&#39;],
+    data() {
+        return {
+            
+        }
+    }
+}
+
+//使用 (字符串类型)
+&lt;Count 自定义属性A=&quot;9&quot;&gt; &lt;/Count&gt;
+//使用 v-bind (数值类型)
+&lt;Count :自定义属性A=&quot;9&quot;&gt; &lt;/Count&gt;
+</code></pre>
+          <ul>
+            <li>
+              <p>注意</p>
+              <ul>
+                <li>
+                  <p>props 是<strong>只读</strong>的</p>
+                  <ul>
+                    <li>vue 规定：组件中封装的自定义属性是 <strong>只读的</strong>，程序员<u>不能直接修改 props 的值</u>，否则报错</li>
+
+                  </ul>
+                </li>
+                <li>
+                  <p>有需要修改 props 时，可将 props 需要<strong>转存到 data</strong> 中</p>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+          <p>&nbsp;</p>
+          <ul>
+            <li>
+              <p>props 的 <strong>default</strong> 默认值</p>
+              <pre><code class='language-javascript' lang='javascript'>export default {
+    // 组件的自定义属性，其中定义的数据可在模板结构中使用
+    props: {
+        init: {
+            // 使用 default 属性定义属性的默认值
+            default: 0
+        }，
+        cover: {
+  			type: Object,
+  			default: function() {
+    			return {
+      				cover: 0
+    			}
+  			}
+    }
+
+</code></pre>
+            </li>
+            <li>
+              <p>props 的 <strong>type</strong> 值类型</p>
+              <pre><code class='language-javascript' lang='javascript'>props:{
+        //自定义属性A ： { /*配置选项 */ }
+        //自定义属性B ： { /*配置选项 */ }
+        //自定义属性C ： { /*配置选项 */ }
+        init:{
+            // 设定默认值
+            default:0,
+            //规定 init的值类型必须是 Number 数值，否则报错
+            type:Number,
+        }
+    },
+</code></pre>
+            </li>
+            <li>
+              <p>props 的 <strong>required</strong> 必填项</p>
+              <pre><code class='language-javascript' lang='javascript'>props:{
+    //自定义属性A ： { /*配置选项 */ }
+  //自定义属性B ： { /*配置选项 */ }
+    //自定义属性C ： { /*配置选项 */ }
+    init:{
+        // 设定默认值
+        default:0,
+        //规定 init的值类型必须是 Number 数值
+        type:Number,
+        // 通过数组定义类型,其中之一即可
+        type:[Number,String]
+        // 必填项校验
+        required:true
+}
+</code></pre>
+            </li>
+
+          </ul>
+          <h3 id="6.组件之间的样式冲突问题">6.组件之间的样式冲突问题</h3>
+          <blockquote>
+            <p>默认情况下，<strong>写在 .vue 组件中的样式会全局生效</strong>，因此很容易造成<strong>多个组件之间的样式冲突问题。</strong></p>
+          </blockquote>
+          <p><strong>其原因</strong>：</p>
+          <ul>
+            <li>单页面应用程序中，<strong>所有组件</strong>的 DOM 结构，都是<strong>基于唯一</strong>的 <strong>index.html</strong> 进行呈现的</li>
+            <li>每个组件中的样式，都会<strong>影响整个 index.html 页面中</strong>的 DOM 元素</li>
+
+          </ul>
+          <p>&nbsp;</p>
+          <p><strong>怎么解决</strong>：</p>
+          <ul>
+            <li>
+              <p>原理-使用自定义属性</p>
+              <ul>
+                <li>
+                  <pre><code class='language-javascript' lang='javascript'>&lt;template&gt;
+  &lt;div class=&quot;left-container&quot; data-v-001&gt;
+    &lt;h3 data-v-001&gt;Left 组件&lt;/h3&gt;
+    &lt;hr&gt;
+    &lt;MyCount :init=&quot;1&quot; data-v-001&gt;&lt;/MyCount&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import Count from &#39;./Count.vue&#39;;
+  export default { components: { Count } }
+&lt;/script&gt;
+
+&lt;style lang=&quot;less&quot;&gt;
+.left-container {
+  padding: 0 20px 20px;
+  background-color: orange;
+  min-height: 250px;
+  flex: 1;
+};
+h3[data-v-001]{
+  color: red;
+}
+&lt;/style&gt;
+</code></pre>
+                </li>
+
+              </ul>
+            </li>
+            <li>
+              <p>style 标签中添加 <strong>scoped</strong></p>
+              <ul>
+                <li>
+                  <pre><code class='language-css' lang='css'>// scoped
+&lt;style lang=&quot;less&quot; scoped&gt;
+.left-container {
+  padding: 0 20px 20px;
+  background-color: orange;
+  min-height: 250px;
+  flex: 1;
+};
+h3{
+  color: red;
+}
+&lt;/style&gt;
+</code></pre>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+          <p><strong>修改子组件的样式</strong>：</p>
+          <ul>
+            <li>
+              <p>选择器前添加 <strong>/deep/</strong></p>
+              <ul>
+                <li>
+                  <pre><code class='language-css' lang='css'>// h5[data-v-xxx]
+// [data-v-xxx] h5
+
+/deep/ h3{
+  color: red;
+}
+</code></pre>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+          <h3 id="7.组件的生命周期/生命周期函数">7.组件的生命周期/生命周期函数</h3>
+          <blockquote>
+            <p>生命周期：是指一个组件从 <strong>创建</strong> -&gt; <strong>运行</strong> -&gt;
+              <strong>销毁</strong>的整个阶段,强调的是一个<strong>时间段</strong>
+            </p>
+            <p>生命周期函数：是由 vue 框架提供的<strong>内置函数</strong>，会伴随组件的生命周期，<strong>自动按次序执行</strong>，强调的是一个<strong>时间点</strong>
+            </p>
+          </blockquote>
+          <p><img
+              src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220907203317717.png"
+              referrerpolicy="no-referrer" alt="image-20220907203317717"></p>
+          <ul>
+            <li>
+              <p>生命周期图示</p>
+              <p><img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimageslifecycle.png"
+                  referrerpolicy="no-referrer" alt="lifecycle"></p>
+              <ol start=''>
+                <li>
+                  <p><code>beforeCreate</code></p>
+                  <ul>
+                    <li>不常用</li>
+
+                  </ul>
+                </li>
+                <li>
+                  <p><code>created</code></p>
+                  <ul>
+                    <li>常用，比如<strong>发起</strong> <strong>Ajax</strong> 请求，<strong>获取数据</strong>，通过 this 调用 methods
+                      中的方法，将获取的数据存入 data</li>
+
+                  </ul>
+                </li>
+                <li>
+                  <p><code>beforeMount</code></p>
+                  <ul>
+                    <li>几乎不被用到</li>
+
+                  </ul>
+                </li>
+                <li>
+                  <p><code>mounted</code></p>
+                  <ul>
+                    <li>常用，要<strong>操作 dom</strong> 须在这之后</li>
+
+                  </ul>
+                </li>
+                <li>
+                  <p><code>beforeUpdata</code></p>
+                  <ul>
+                    <li>data 数据发送改变<strong>但</strong> dom <strong>未改变</strong></li>
+
+                  </ul>
+                </li>
+                <li>
+                  <p><code>updata</code></p>
+                  <ul>
+                    <li>常用，data 数据发送改变<strong>且</strong> dom <strong>也改变</strong></li>
+
+                  </ul>
+                </li>
+
+              </ol>
+            </li>
+
+          </ul>
+          <h3 id="8.组件之间的数据共享">8.组件之间的数据共享</h3>
+          <ul>
+            <li>
+              <p>组件之间的最常见关系</p>
+              <ul>
+                <li>
+                  <p>父子关系</p>
+                  <ul>
+                    <li>
+                      <p>父 -&gt; 子 传递数据</p>
+                      <ul>
+                        <li>自定义<strong>属性</strong>： <code>props</code> 不建议修改 props 里的值，须修改请转存</li>
+
+                      </ul>
+                    </li>
+                    <li>
+                      <p>子 -&gt; 父 传递数据</p>
+                      <ul>
+                        <li>自定义<strong>事件</strong>： 通过 <code>$emit</code> 触发自定义事件</li>
+                        <li><img
+                            src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220908170611529.png"
+                            referrerpolicy="no-referrer" alt="image-20220908170611529"></li>
+
+                      </ul>
+                    </li>
+
+                  </ul>
+                </li>
+                <li>
+                  <p>兄弟关系</p>
+                  <ul>
+                    <li>
+                      <p>在 <strong>vue2.x</strong> 中使用 <strong>EventBus</strong></p>
+                    </li>
+                    <li>
+                      <p><img
+                          src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220908171409818.png"
+                          referrerpolicy="no-referrer" alt="image-20220908171409818"></p>
+                      <ol start=''>
+                        <li>创建 <strong>eventBus.js</strong> 模块，并向外共享一个 <strong>Vue 的实例对象</strong></li>
+                        <li>在数据<strong>发送方</strong>，调用 <code>bus.$emit(&#39;事件名称&#39;,要发送的数据)</code> 方法触发自定义事件</li>
+                        <li>在数据<strong>接收方</strong>，调用 <code>bus.$on(&#39;事件名称&#39;,事件处理函数)</code>
+                          方法<strong>注册一个自定义事件</strong></li>
+
+                      </ol>
+                    </li>
+
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+          <h3 id="9.ref 引用">9.ref 引用</h3>
+          <blockquote>
+            <p>ref 用来辅助开发者在 <strong>不依赖 DOM api 的情况下</strong>，获取 DOM 元素或组件的引用。</p>
+          </blockquote>
+          <ul>
+            <li>基础使用</li>
+
+          </ul>
+          <pre><code class='language-javascript' lang='javascript'>// template
+// 取名 + Ref
+&lt;h1 ref=&quot;myh1Ref&quot;&gt;App 根组件&lt;/h1&gt;
+&lt;button @click=&quot;showThis&quot;&gt;打印this&lt;/button&gt;
+
+
+// script
+methods:{
+    showThis() {
+      // console.log(this.$refsRef.myh1);
+      this.$refs.myh1Ref.style.color=&#39;red&#39;
+    }
+}
+</code></pre>
+          <ul>
+            <li>
+              <p>引用组件实例</p>
+              <ul>
+                <li>
+                  <p><code>this.$nextTick(cb)</code> —— 组件的 $nextTick(cb) 方法，会把 cb 回调函数<strong>推迟到下一个 DOM
+                      更新周期之后执行</strong>。通俗的理解是：等组件的 DOM 更新完成后，再执行 cb 回调函数可以操作到最新的 DOM 元素。</p>
+                </li>
+                <li>
+                  <pre><code class='language-javascript' lang='javascript'>// template
+&lt;input ref=&quot;iptRef&quot; type=&quot;text&quot; v-if=&quot;inputVisible&quot; @blur=&quot;showInput&quot;&gt;
+&lt;button @click=&quot;showButton&quot; v-if=&quot;!inputVisible&quot;&gt;展示输入框&lt;/button&gt;
+
+// script
+showButton() {
+  this.inputVisible=!this.inputVisible
+  //文本框拿到焦点
+  this.$nextTick(()=&gt;{
+    this.$refs.iptRef.focus()
+  })
+},
+showInput() {
+  this.inputVisible=!this.inputVisible
+},
+</code></pre>
+                </li>
+                <li>
+                  <p>如果注册到 <code>updata</code>中，只要 DOM 一更新，就会触发，因而在失去焦点的情况下，就会出现报错。</p>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+          <h3 id="10.动态组件">10.动态组件</h3>
+          <blockquote>
+            <p>动态组件就是指的就是<strong>动态切换组件的显示与隐藏</strong></p>
+            <p>vue 提供了一个内置的<code>&lt;component&gt;</code>组件，专门用来实现动态组件的渲染。<em>可以理解为一个占位符</em></p>
+          </blockquote>
+          <ul>
+            <li>
+              <p>实例：</p>
+              <pre><code class='language-javascript' lang='javascript'>&lt;!-- template --&gt;
+    
+&lt;button @click=&quot;comName=&#39;Left&#39;&quot;&gt;展示 Left&lt;/button&gt;
+&lt;button @click=&quot;comName=&#39;Right&#39;&quot;&gt;展示 Right&lt;/button&gt;
+// 1.component 标签是 vue 内置的，作用为占位符
+// 2.is 的值，表示要渲染的组件的名字
+// 3.is 的值，应该是组件在 components 节点下注册的名称
+&lt;component :is=&quot;comName&quot;&gt;&lt;/component&gt;
+
+&lt;!-- script --&gt;
+data() {
+  return {
+    // 表示要展示的组件的名字
+    comName:&#39;Left&#39;
+  }
+},
+</code></pre>
+              <ul>
+                <li>但此时组件切换时会导致组件<strong>销毁</strong></li>
+
+              </ul>
+            </li>
+            <li>
+              <p>使用 keep-alive</p>
+              <pre><code class='language-html' lang='html'>&lt;keep-alive&gt;
+  &lt;component :is=&quot;comName&quot;&gt;&lt;/component&gt;
+&lt;/keep-alive&gt;    
+</code></pre>
+              <ul>
+                <li><code>keep-alive</code>可把内部组件进行<strong>缓存</strong></li>
+
+              </ul>
+            </li>
+            <li>
+              <p>希望组件<strong>被激活时或者被缓存时</strong>做某些事</p>
+              <blockquote>
+                <p>被<strong>缓存</strong>时，会自动触发<strong>组件</strong>的 <code>deactivated</code> 生命周期函数</p>
+                <p>被<strong>激活</strong>时，会自动触发<strong>组件</strong>的 <code>activated</code> 生命周期函数</p>
+              </blockquote>
+              <pre><code class='language-javascript' lang='javascript'>// Left 组件内部
+
+// 当组件第一次被创建的时候，既会执行 created  生命周期，也会执行 activated 生命周期
+// 当组件被激活时，只会触发 activated 生命周期，不会再触发 created。因为组件没有被重新创建
+
+activated() {
+  console.log(&#39;组件被激活了&#39;);
+},
+deactivated() {
+  console.log(&#39;组件被缓存了&#39;);
+</code></pre>
+            </li>
+            <li>
+              <p><code>keep-alive</code> 范围内的组件都会被缓存，如果只<strong>指定</strong>某些组件<strong>被缓存</strong>，则可以使用
+                <strong>include</strong> 属性
+              </p>
+              <blockquote>
+                <p>扩展：与之对应的有 <strong>exclude</strong> 属性，<strong>指定</strong>某些组件<strong>不被缓存</strong></p>
+                <p>注意：<strong>不可同时使用</strong>；<strong>name 名称</strong></p>
+              </blockquote>
+              <pre><code class='language-html' lang='html'>&lt;!-- 名称为组件的 name 名称 ,组件名之间用英文的逗号分隔 --&gt;
+&lt;keep-alive include=&quot;MyLeft,Right&quot;&gt;
+  &lt;component :is=&quot;comName&quot;&gt;&lt;/component&gt;
+&lt;/keep-alive&gt;   
+
+// Left.vue
+export default {
+  // 当提供了 name 组件的时候，组件的名称（vue 的调试工具里）就是 name 的值
+  name:&#39;MyLeft&#39;
+}
+</code></pre>
+            </li>
+
+          </ul>
+          <h3 id="11.插槽">11.插槽</h3>
+          <blockquote>
+            <p><strong>插槽（Slot）</strong>时 vue
+              为<strong>组件的封装者</strong>提供的能力。允许开发者在封装组件时，把<strong>不确定的、希望有用户指定的部分</strong>定义为插槽</p>
+          </blockquote>
+          <p><img
+              src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220911175314514.png"
+              referrerpolicy="no-referrer" alt="image-20220911175314514"></p>
+          <ul>
+            <li>
+              <p>简化使用：</p>
+              <pre><code class='language-javascript' lang='javascript'>&lt;!-- Left.vue --&gt;
+&lt;h3&gt;Left 组件&lt;/h3&gt;
+&lt;hr&gt;
+&lt;!--声明一个插槽区--&gt;
+&lt;slot name=&quot;default&quot;&gt;&lt;/slot&gt;
+
+
+&lt;!-- App.vue --&gt;
+&lt;Left&gt;
+  &lt;p&gt;这是在 Left 组件的内容区域声明的p标签&lt;/p&gt;
+&lt;/Left&gt;
+</code></pre>
+            </li>
+
+          </ul>
+          <blockquote>
+            <p>vue 官方<strong>规定</strong>：每个 slot 插槽，都要有一个 <strong>name 名称</strong>，如果省略则叫做 <strong>default</strong></p>
+            <p>默认情况下，在使用组件的时候，提供的内容都会被填充到名字为 <strong>default</strong> 的插槽之中</p>
+          </blockquote>
+          <ul>
+            <li>
+              <p>指定内容到 default 插槽</p>
+              <pre><code class='language-html' lang='html'>&lt;!-- template 不会被渲染到ui结构，是一个虚拟的元素 --&gt;
+&lt;!-- v-solt 指令不能直接用到某个元素身上，必须在 template 标签上 --&gt;
+&lt;template v-solt:default&gt;
+&lt;!-- 简写为：‘&lt;template #default&gt;’ --&gt;
+&lt;Left&gt;
+  &lt;p&gt;这是在 Left 组件的内容区域声明的p标签&lt;/p&gt;
+&lt;/Left&gt;
+&lt;/template&gt;
+</code></pre>
+            </li>
+            <li>
+              <p>可以给插槽<strong>设置后备内容</strong></p>
+              <blockquote>
+                <p>封装组件时，可以为预留的<slot>插槽提供<strong>后备内容</strong>，如果组件的使用者没有为插槽提供任何内容，则后备内容会失效。</p>
+              </blockquote>
+              <pre><code class='language-html' lang='html'>&lt;!--声明一个插槽区--&gt;
+&lt;slot name=&quot;default&quot;&gt;
+	&lt;p&gt;
+    	123
+	&lt;/p&gt;
+&lt;/slot&gt;
+</code></pre>
+            </li>
+            <li>
+              <p><strong>具名</strong>插槽</p>
+              <pre><code class='language-html' lang='html'>&lt;!--文章的标题--&gt;
+&lt;div class=&quot;header-box&quot;&gt;
+    &lt;slot name=&quot;title&quot;&gt;
+    &lt;/slot&gt;
+&lt;/div&gt;
+&lt;!--文章的内容--&gt;
+&lt;div class=&quot;content-box&quot;&gt;
+    &lt;slot name=&quot;content&quot;&gt;
+    &lt;/slot&gt;
+&lt;/div&gt;
+&lt;!--文章的作者--&gt;
+&lt;div class=&quot;footer-box&quot;&gt;
+    &lt;slot name=&quot;author&quot;&gt;
+    &lt;/slot&gt;
+&lt;/div&gt;
+
+
+//-------------------------------
+&lt;Article&gt;
+  &lt;template #title&gt;
+    &lt;h3&gt;诗&lt;/h3&gt;
+  &lt;/template&gt;
+  &lt;template #content&gt;
+    &lt;div&gt;
+      &lt;p&gt;鸡鸣寺的樱花&lt;/p&gt;
+      &lt;p&gt;楼外的蒹葭&lt;/p&gt;
+      &lt;p&gt;今晚的月色&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/template&gt;
+  &lt;template #author&gt;
+    &lt;div&gt;作者：&lt;/div&gt;
+  &lt;/template&gt;
+&lt;/Article&gt;
+</code></pre>
+            </li>
+            <li>
+              <p><strong>作用域</strong>插槽（定义插槽时可以自定义属性，该自定义属性可以由使用插槽者接收到，类似 子 -&gt; 父）<strong>scope</strong></p>
+              <pre><code class='language-html' lang='html'>&lt;!--文章的内容--&gt;
+&lt;div class=&quot;content-box&quot;&gt;
+    &lt;!--在封装组件时，为预留的&lt;slot&gt;提供属性对应的
+值，这种用法，叫做“作用域插槽”--&gt;
+    &lt;slot name=&quot;content&quot; msg=&quot;hello vue&quot;&gt;
+    &lt;/slot&gt;
+&lt;/div&gt;
+
+
+-----------------------
+
+&lt;template #content=&quot;scope&quot;&gt;
+  &lt;div&gt;
+    &lt;p&gt;鸡鸣寺的樱花&lt;/p&gt;
+    &lt;p&gt;楼外的蒹葭&lt;/p&gt;
+    &lt;p&gt;今晚的月色&lt;/p&gt;
+    &lt;p&gt;{{scope.msg}}&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+            </li>
+            <li>
+              <p>作用域插槽的<strong>解构赋值</strong></p>
+              <pre><code class='language-html' lang='html'>&lt;!--文章的内容--&gt;
+&lt;div class=&quot;content-box&quot;&gt;
+    &lt;!--在封装组件时，为预留的&lt;slot&gt;提供属性对应的
+值，这种用法，叫做“作用域插槽”--&gt;
+    &lt;slot name=&quot;content&quot; msg=&quot;hello vue&quot; :user:&quot;userinfo&quot;&gt;
+    &lt;/slot&gt;
+&lt;/div&gt;
+
+data() {
+  return {
+    userinfo:{
+      name:&#39;zs&#39;,
+      age:&#39;18&#39;
+    }
+  }
+},
+
+-----------------------
+
+&lt;template #content=&quot;{msg,user}&quot; &gt;
+  &lt;div&gt;
+    &lt;p&gt;鸡鸣寺的樱花&lt;/p&gt;
+    &lt;p&gt;楼外的蒹葭&lt;/p&gt;
+    &lt;p&gt;今晚的月色&lt;/p&gt;
+    &lt;p&gt;{{msg}}&lt;/p&gt;
+    &lt;p&gt;{{user.name}}&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+            </li>
+
+          </ul>
+          <h2 id="五.ESLint">五.<a href='https://eslint.bootcss.com/'>ESLint</a></h2>
+          <h3 id="1.vue - cli 配置">1.vue - cli 配置</h3>
+          <ul>
+            <li>注意勾选 <code>Linter / Formatter</code></li>
+
+          </ul>
+          <ol start=''>
+            <li>
+              <p>选择代码规范</p>
+              <p><img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220912171940300.png"
+                  referrerpolicy="no-referrer" alt="image-20220912171940300"></p>
+              <blockquote>
+                <p>Standard config 为标准规范</p>
+              </blockquote>
+            </li>
+            <li>
+              <p><img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220912172132109.png"
+                  referrerpolicy="no-referrer" alt="image-20220912172132109"></p>
+              <blockquote>
+                <p>1.Lint on save: 保存时进行代码规范的检查</p>
+                <p>2.Lint and fix on commit:提交代码时进行代码的检查，并且自动修复问题</p>
+              </blockquote>
+              <p>建议<strong>勾选 第 1 项</strong>，第 2 项不建议勾选，为了养成好的习惯。</p>
+            </li>
+
+          </ol>
+          <h3 id="2. .eslintrc.js">2. .eslintrc.js</h3>
+          <h4 id="2.1rules:">2.1rules：</h4>
+          <p><img
+              src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220912174009484.png"
+              referrerpolicy="no-referrer" alt="image-20220912174009484"></p>
+          <blockquote>
+            <p><a href='https://eslint.bootcss.com/docs/rules/'>规则</a>：可在该网址进行查询配置项。</p>
+            <p>debugger 打断点，调试用</p>
+          </blockquote>
+          <pre><code class='language-javascript' lang='javascript'>// 判断项目的打包
+process.env.NODE_ENV === &#39;production&#39; ? &#39;warn&#39; : &#39;off&#39;
+</code></pre>
+          <h4 id="2.2常见规则">2.2常见规则</h4>
+          <blockquote>
+            <ol start=''>
+              <li>不能有连续的空格、空行</li>
+              <li>文件的最后需要一个空行</li>
+              <li>语句的最后面不能有空格</li>
+
+            </ol>
+          </blockquote>
+          <ul>
+            <li>根据报错所提示的文本到 ESLint 中查找</li>
+
+          </ul>
+          <p><img
+              src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimagesimage-20220912200516202.png"
+              referrerpolicy="no-referrer" alt="image-20220912200516202"></p>
+          <h3 id="3. VScode 配置 ESLint">3. VScode 配置 ESLint</h3>
+          <ul>
+            <li>
+              <p>ESLint</p>
+              <ul>
+                <li>
+                  <p>settings.json</p>
+                  <ul>
+                    <li>
+                      <pre><code class='language-json' lang='json'>// ESLint 插件的配置
+&quot;editor.codeActionsOnSave&quot;: {
+  &quot;source.fixAll&quot;: true,
+},
+&quot;eslint.alwaysShowStatus&quot;: true,
+</code></pre>
+                    </li>
+
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li>
+              <p>Prettier - Code formatter （作者：Prettier）</p>
+              <ul>
+                <li>
+                  <p>settings.json</p>
+                  <ul>
+                    <li>
+                      <pre><code class='language-json' lang='json'>// prettier 插件的配置
+&quot;prettier.configPath&quot;: &quot;C:\\Users\\Ming comity\\.prettierrc&quot;
+&quot;prettier.trailingComma&quot;: &quot;none&quot;,
+&quot;prettier.semi&quot;: false,
+// 每行文字超过此限制将会被迫换行
+&quot;prettier.printWidth&quot;: 300,
+// 使用单引号替换双引号
+&quot;prettier.singleQuote&quot;: true,
+&quot;prettier.arrowParens&quot;: &quot;avoid&quot;,
+// 设置 .vue 文件中，HTML 代码的格式化插件
+&quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;,
+&quot;vetur.ignoreProjectWarning&quot;: true,
+&quot;vetur.format.defaultFormatterOptions&quot;: {
+  &quot;js-beautify-html&quot;: {
+    &quot;wrap_attributes&quot;: false
+  },
+  &quot;prettier&quot;: {
+    &quot;trailingComma&quot;: &quot;none&quot;,
+    &quot;semi&quot;: false,
+    &quot;singleQuote&quot;: true,
+    &quot;arrowParens&quot;: &quot;avoid&quot;,
+    &quot;printWidth&quot;: 300
+  }
+},
+</code></pre>
+                      <p>&nbsp;</p>
+                    </li>
+
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li>
+              <p>.prettierrc 配置文件</p>
+              <ul>
+                <li>
+                  <p>路径：<code>C:\\Users\\Ming comity\\.prettierrc</code></p>
+                  <ul>
+                    <li>
+                      <pre><code class='language-json' lang='json'>{
+    &quot;semi&quot;: false,
+    &quot;singleQuote&quot;: true,
+    &quot;bracketSpacing&quot;: true
+}
+settings.json中的配置如下：
+&quot;prettier.configPath&quot;: &quot;C:\\Users\\HP\\.prettierrc&quot;,
+    // 安装Prettier配置
+    &quot;eslint.alwaysShowStatus&quot;: true,
+    &quot;prettier.trailingComma&quot;: &quot;none&quot;,
+    &quot;prettier.semi&quot;: false,
+
+    // 每行文字个数超出此限制将会被迫换行
+    &quot;prettier.printWidth&quot;: 300,
+    // 使用单引号替换双引号
+    &quot;prettier.singleQuote&quot;: true,
+    &quot;prettier.arrowParens&quot;: &quot;avoid&quot;,
+    // 设置 .vue 文件中，HTML代码的格式化插件
+    &quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;,
+    &quot;vetur.ignoreProjectWarning&quot;: true,
+    &quot;vetur.format.defaultFormatterOptions&quot;: {
+        &quot;prettier&quot;: {
+            &quot;trailingComma&quot;: &quot;none&quot;,
+            &quot;singleQuote&quot;: true,
+            &quot;semi&quot;: false,
+            &quot;arrowParens&quot;: &quot;avoid&quot;,
+            &quot;printWidth&quot;: 300
+        },
+        &quot;js-beautify-html&quot;: {
+            &quot;wrap_attributes&quot;: false
+        },
+    },
+</code></pre>
+                    </li>
+
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+          <blockquote>
+            <p>注意用 VScode 打开该项目的目录才能有效</p>
+          </blockquote>
+          <h2 id="六. Vue - Router">六. <a href='https://router.vuejs.org/zh/'>Vue - Router</a></h2>
+          <h3 id="1.前端路由的概念与原理">1.前端路由的概念与原理</h3>
+          <blockquote>
+            <p>路由（英文：router）就是<strong>对应关系</strong></p>
+            <p>前端路由：<strong>Hash
+                地址</strong>（#锚链接<code>可产生浏览历史</code>）与<strong>组件</strong>之间的<strong>对应关系</strong>。<code>location.hash</code>
+            </p>
+          </blockquote>
+          <ul>
+            <li>
+              <p><strong>工作方式</strong></p>
+              <ol start=''>
+                <li>用户<strong>点击了</strong>页面上的<strong>路由链接</strong>（a链接）</li>
+                <li>导致了 <strong>URL 地址栏</strong>中的 <strong>Hash 值</strong>发生了变化</li>
+                <li><strong>前端路由监听到了 Hash 地址的变化</strong></li>
+                <li>前端路由把由当前 <strong>Hash 地址对应的组件</strong>渲染到浏览器中</li>
+
+              </ol>
+              <p><img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220914113710463.png"
+                  referrerpolicy="no-referrer" alt="image-20220914113710463"></p>
+              <pre><code class='language-javascript' lang='javascript'>// 监听 hash 变化
+window.onhashchange = () =&gt; {
+  console.log(&#39;hash 变化&#39;,location.hash);
+}
+</code></pre>
+            </li>
+
+          </ul>
+          <p>&nbsp;</p>
+          <h3 id="2.安装和配置">2.安装和配置</h3>
+          <blockquote>
+            <p><a href='https://router.vuejs.org/zh/'>vue - router</a> 是 vue 官给出的路由解决方案。它只能结合 vue 项目进行使用，能够轻松的管理 SPA
+              项目中组件的切换。</p>
+          </blockquote>
+          <ol start=''>
+            <li>
+              <p>安装 vue-router 包</p>
+              <ul>
+                <li><code>npm i vue-router -S</code></li>
+
+              </ul>
+            </li>
+            <li>
+              <p>创建<strong>路由模块</strong></p>
+              <ul>
+                <li>
+                  <p>在 src 源代码目录下，新建 router/index.js 路由模块，并初始化以下代码</p>
+                </li>
+                <li>
+                  <pre><code class='language-javascript' lang='javascript'>// 1.导入 Vue 和 VueRouter
+import Vue from &#39;vue&#39;
+import VueRouter from &#39;vue-router&#39;
+
+// 2.调用 Vue.use() 函数，把 VueRouter 安装为 Vue 的插件
+// Vue.use() 就是用来安装插件的
+Vue.use(VueRouter)
+
+// 3.创建路由的实例对象
+const router = new VueRouter()
+
+// 4.向外共享路由的实例对象
+export default router
+
+</code></pre>
+                </li>
+
+              </ul>
+            </li>
+            <li>
+              <p>导入并挂载路由模块</p>
+              <ul>
+                <li>
+                  <p>在 <strong>main.js</strong> 入口文件中</p>
+                </li>
+                <li>
+                  <pre><code class='language-javascript' lang='javascript'>import router from &#39;@/router/index.js&#39;
+
+
+new Vue({
+  render: h =&gt; h(App),
+  // 在 vue 项目中，要想把路由用起来，必须把路由实例对象，通过下面的方式进行挂载
+  router
+}).$mount(&#39;#app&#39;)
+
+</code></pre>
+                </li>
+
+              </ul>
+            </li>
+            <li>
+              <p>声明<strong>路由链接</strong>和<strong>占位符</strong></p>
+              <ul>
+                <li>
+                  <p>在 <strong>App.vue</strong> 根组件中</p>
+                </li>
+                <li>
+                  <pre><code class='language-html' lang='html'>&lt;!-- 当安装了 vur-router 后，就可以使用 router-link 来替代掉普通的 a 链接--&gt;
+&lt;!--
+! &lt;a href=&quot;#/home&quot;&gt;首页&lt;/a&gt;
+! &lt;a href=&quot;#/movie&quot;&gt;电影&lt;/a&gt;
+! &lt;a href=&quot;#/about&quot;&gt;关于&lt;/a&gt;
+--&gt;
+&lt;!-- 不用‘#’号 --&gt;
+&lt;router-link to=&quot;/home&quot;&gt;首页&lt;/router-link&gt;
+&lt;router-link to=&quot;/movie&quot;&gt;电影&lt;/router-link&gt;
+&lt;router-link to=&quot;/about&quot;&gt;关于&lt;/router-link&gt;
+&lt;hr /&gt;
+&lt;!-- 只要在项目中安装和配置了 vue-router ，就可以使用 router-view 这个组件了 --&gt;
+&lt;!-- 作用很单纯，就是个：占位符 --&gt;
+&lt;router-view&gt;&lt;/router-view&gt;
+</code></pre>
+                </li>
+                <li>
+                  <p>在 <strong>router/index.js</strong> 路由模块中<strong>定义“hash 地址”与“组件”之间的对应关系</strong></p>
+                </li>
+                <li>
+                  <pre><code class='language-javascript' lang='javascript'>// 导入需要的组件
+import Home from &#39;@/components/Home.vue&#39;
+import Movie from &#39;@/components/Movie.vue&#39;
+import About from &#39;@/components/About.vue&#39;
+
+// 2.调用 Vue.use() 函数，把 VueRouter 安装为 Vue 的插件
+Vue.use(VueRouter)
+
+// 3.创建路由的实例对象
+const router = new VueRouter({
+  // routes 是一个数组，作用：定义“hash 地址”与“组件”之间的对应关系
+  routes:[
+      // 路由规则 不用‘#’号
+    {path: &#39;/home&#39;,component: Home},
+    {path: &#39;/movie&#39;,component: Movie},
+    {path: &#39;/about&#39;,component: About}
+  ]
+})
+
+</code></pre>
+                </li>
+
+              </ul>
+            </li>
+
+          </ol>
+          <h3 id="3.常见用法">3.常见用法</h3>
+          <h4 id="3.1路由重定向">3.1路由重定向</h4>
+          <ul>
+            <li>用于解决访问主域名加端口时，跳转到哪个锚链接的问题</li>
+
+          </ul>
+          <blockquote>
+            <p><strong>路由重定向</strong>指的是：用户在访问<strong>地址A</strong>的时候，<strong>强制用户跳转</strong>到地址C，从而展示特定的组件页面。</p>
+          </blockquote>
+          <ul>
+            <li>
+              <p>通过路由规则的 redirect 属性，指定一个新的路由地址</p>
+              <pre><code class='language-javascript' lang='javascript'>// 3.创建路由的实例对象
+const router = new VueRouter({
+  // routes 是一个数组，作用：定义“hash 地址”与“组件”之间的对应关系
+  routes:[
+    // 当用户访问 / 的时候，通过 redirect 跳转到 /home
+    {path: &#39;/&#39;,redirect: &#39;/home&#39;},
+    {path: &#39;/home&#39;,component: Home},
+    {path: &#39;/movie&#39;,component: Movie},
+    {path: &#39;/about&#39;,component: About}
+  ]
+})
+</code></pre>
+            </li>
+
+          </ul>
+          <h4 id="3.2路由嵌套">3.2路由嵌套</h4>
+          <blockquote>
+            <p>通过路由实现<strong>组件的嵌套展示</strong>，叫做<strong>嵌套路由</strong>。</p>
+            <p><img
+                src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220915095818575.png"
+                referrerpolicy="no-referrer" alt="image-20220915095818575"></p>
+          </blockquote>
+          <ul>
+            <li>
+              <p>通过 children 属性声明子路由规则</p>
+              <pre><code class='language-javascript' lang='javascript'>// 子路由组件
+import Tab1 from &#39;@/components/tabs/Tab1.vue&#39;
+import Tab2 from &#39;@/components/tabs/Tab2.vue&#39;
+
+
+// 3.创建路由的实例对象
+const router = new VueRouter({
+  // routes 是一个数组，作用：定义“hash 地址”与“组件”之间的对应关系
+  routes:[
+    // 当用户访问 / 的时候，通过 redirect 跳转到 /home
+    {path: &#39;/&#39;,redirect: &#39;/home&#39;},
+    {path: &#39;/home&#39;,component: Home},
+    {path: &#39;/movie&#39;,component: Movie},
+    {
+      // about 页面的路由规则（父级路由规则）
+      path:&#39;/about&#39;,
+      component:About,
+      children:[
+        // 通过 children 属性，嵌套子级路由规则 注意没有 ‘/’
+        {path:&#39;tab1&#39;,component:Tab1},
+        {path:&#39;tab2&#39;,component:Tab2}
+      ]
+    }
+  ]
+})
+</code></pre>
+            </li>
+            <li>
+              <p>子路由重定向</p>
+              <pre><code class='language-javascript' lang='javascript'>{
+  // about 页面的路由规则（父级路由规则）
+  path:&#39;/about&#39;,
+  component:About,
+  redirect: &#39;/about/tab1&#39;,
+  children:[
+    // 通过 children 属性，嵌套子级路由规则，注意没有 ‘/’
+    {path:&#39;tab1&#39;,component:Tab1},
+    {path:&#39;tab2&#39;,component:Tab2}
+  ]
+</code></pre>
+            </li>
+            <li>
+              <p>默认子路由</p>
+              <ul>
+                <li>如果 <strong>children</strong> 数组中，某个路由规则的 <strong>path
+                    值为空字符串</strong>，则这条路由规则，叫做“<strong>默认子路由</strong>”</li>
+
+              </ul>
+              <pre><code class='language-javascript' lang='javascript'>{
+  // about 页面的路由规则（父级路由规则）
+  path:&#39;/about&#39;,
+  component:About,
+  // redirect: &#39;/about/tab1&#39;,
+  children:[
+    // 通过 children 属性，嵌套子级路由规则，注意没有 ‘/’
+    {path:&#39;&#39;,component:Tab1},
+    {path:&#39;tab2&#39;,component:Tab2}
+  ]
+</code></pre>
+              <ul>
+                <li>About.vue </li>
+
+              </ul>
+              <pre><code class='language-html' lang='html'>// 可以删除‘/tab1’
+&lt;router-link to=&quot;/about&quot;&gt;tab1&lt;/router-link&gt;
+&lt;router-link to=&quot;/about/tab2&quot;&gt;tab2&lt;/router-link&gt;
+</code></pre>
+            </li>
+
+          </ul>
+          <h4 id="3.3动态路由匹配">3.3动态路由匹配</h4>
+          <ul>
+            <li>
+              <p>思考</p>
+              <p><img
+                  src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220915192257509.png"
+                  referrerpolicy="no-referrer" alt="image-20220915192257509"></p>
+            </li>
+
+          </ul>
+          <blockquote>
+            <p>动态路由指的是：把 Hash 地址中<strong>可变的部分</strong>定义为<strong>参数项</strong>，从而<strong>提高路由规则的复用性。</strong></p>
+          </blockquote>
+          <ul>
+            <li>
+              <p>使用<strong>英文的冒号（:）</strong>来定义路由的参数项</p>
+              <pre><code class='language-javascript' lang='javascript'>// router/index.js
+
+// 路由中的动态参数以 : 进行声明，冒号后面的是动态参数的名称
+// 需求：在 Movie 组件中，希望根据 id 的值来展示对应电影的详情信息。
+{path: &#39;/movie/:id&#39;,component: Movie}
+
+// 相比于上面的定义 3 个路由规则，合并成了一个，提高了路由规则的复用性
+
+</code></pre>
+              <pre><code class='language-html' lang='html'>&lt;!-- 注册组件 App.vue --&gt;
+&lt;router-link to=&quot;/home&quot;&gt;首页&lt;/router-link&gt;
+&lt;router-link to=&quot;/movie/1&quot;&gt;洛基&lt;/router-link&gt;
+&lt;router-link to=&quot;/movie/2&quot;&gt;妇联&lt;/router-link&gt;
+&lt;router-link to=&quot;/movie/3&quot;&gt;雷神&lt;/router-link&gt;
+&lt;router-link to=&quot;/about&quot;&gt;关于&lt;/router-link&gt;
+</code></pre>
+              <ul>
+                <li>方式<strong>1</strong> -- 在 Movie.vue 组件里拿到 id 值</li>
+
+              </ul>
+              <pre><code class='language-html' lang='html'>&lt;!-- Movie.vue --&gt;
+&lt;!-- 拿到路由的 参数对象 ，后拿到 id 值 --&gt;
+&lt;h3&gt;Movie 组件---{{this.$route.params.id}}&lt;/h3&gt;
+</code></pre>
+              <ul>
+                <li>方式<strong>2</strong> -- 在 Movie.vue 组件里拿到 id 值</li>
+
+              </ul>
+              <pre><code class='language-html' lang='html'>&lt;!-- Movie.vue --&gt;
+&lt;template&gt;
+    &lt;h3&gt;Movie 组件---{{id}}&lt;/h3&gt;
+&lt;/template&gt;
+&lt;srcipt&gt;
+export default {
+  name: &#39;Movie&#39;,
+  props:[&#39;id&#39;],
+  methods: {
+  showThis() {
+    console.log(this);
+  }
+}
+}
+&lt;/srcipt&gt;
+</code></pre>
+              <pre><code class='language-javascript' lang='javascript'>// router/index.js
+// 开启 props 传参
+{path: &#39;/movie/:id&#39;,component: Movie,props:true},
+</code></pre>
+            </li>
+
+          </ul>
+          <h4 id="3.4扩展">3.4扩展</h4>
+          <blockquote>
+            <p><code>&lt;router-link to=&quot;/movie/1&quot;&gt;洛基&lt;/router-link&gt;</code></p>
+            <p>注意1：在 hash 地址中， <strong>/</strong> 后面的参数项，叫做“<strong>路径参数</strong>”</p>
+            <p>在路由“参数对象”中 ，需要使用 <strong>this.$router.params</strong> 来访问<strong>路径参数</strong></p>
+          </blockquote>
+          <p>&nbsp;</p>
+          <blockquote>
+            <p><code>&lt;router-link to=&quot;/movie/2?name=zs&amp;age=20&quot;&gt;妇联&lt;/router-link&gt;</code></p>
+            <p>注意2：在 hash 地址中， <strong>？</strong> 后面的参数项，叫做“<strong>查询参数</strong>” </p>
+            <p>在路由“参数对象”中，需要使用 <strong>this.$router.query</strong> 来访问<strong>查询参数</strong></p>
+          </blockquote>
+          <p>&nbsp;</p>
+          <blockquote>
+            <p><img
+                src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220915200408711.png"
+                referrerpolicy="no-referrer" alt="image-20220915200408711"></p>
+            <p>注意3：在 this.$route 中， path 只是<strong>路径部分</strong>：fullPath 是<strong>完整的地址</strong></p>
+          </blockquote>
+          <h4 id="3.5声明式导航 编程式导航">3.5声明式导航 &amp; 编程式导航</h4>
+          <blockquote>
+            <p>在浏览器中，<strong>点击链接</strong>实现导航的方式，叫做<strong>声明式导航</strong>。</p>
+          </blockquote>
+          <p>例：</p>
+          <ul>
+            <li>普通网页中点击 <strong>&lt;a&gt; 链接</strong>、vue 项目中点击 <strong>&lt;router-link&gt;</strong> 都属于声明式导航</li>
+
+          </ul>
+          <blockquote>
+            <p>在浏览器中，调用 API 方法实现导航的方式，叫做编程式导航。</p>
+          </blockquote>
+          <ul>
+            <li>普通网页中调用 <strong>location.href</strong> 跳转到新页面的方式，属于编程式导航</li>
+
+          </ul>
+          <p>&nbsp;</p>
+          <blockquote>
+            <p><code>this.$route</code> 路由对象 </p>
+            <p><code>this.$router</code> 导航对象</p>
+          </blockquote>
+          <ul>
+            <li>
+              <p>vue-router 中的编程式导航 API</p>
+              <ul>
+                <li>
+                  <p><code>this.$router.push(&#39;hash 地址&#39;)</code></p>
+                  <ul>
+                    <li>跳转到指定 hash 地址，并<strong>增加</strong>一条历史记录</li>
+
+                  </ul>
+                </li>
+                <li>
+                  <p><code>this.$router.replace(&#39;hash 地址&#39;)</code></p>
+                  <ul>
+                    <li>跳转到指定 hash 地址，并<strong>替换掉当前的</strong>历史记录</li>
+
+                  </ul>
+                </li>
+                <li>
+                  <p><code>this.$router.go(数值 n)</code></p>
+                  <ul>
+                    <li>调用该方法可在浏览器中，<strong>前进</strong>或<strong>后退</strong>历史记录</li>
+
+                  </ul>
+                  <pre><code class='language-javascript' lang='javascript'>// go(-1) 表示后退一层
+// 当后退的层数过大时，会原地不动
+// go(1) 表示前进一层
+this.$router.go(-1)
+</code></pre>
+                  <ul>
+                    <li>
+                      <p><strong>简化用法</strong></p>
+                      <blockquote>
+                        <p>在实际开发中，一般只会前进和后退一层页面，因此 vue-router 提供如下两种便捷方法</p>
+                      </blockquote>
+                      <ul>
+                        <li>
+                          <p><code>$router.back()</code></p>
+                          <ul>
+                            <li>在历史记录中，后退到上一个页面</li>
+
+                          </ul>
+                        </li>
+                        <li>
+                          <p><code>$router.forward()</code></p>
+                          <ul>
+                            <li>在历史记录中，前进到上一个页面</li>
+
+                          </ul>
+                        </li>
+
+                      </ul>
+                    </li>
+
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+          <h4 id="3.6导航守卫">3.6导航守卫</h4>
+          <blockquote>
+            <p><strong>导航守卫</strong>可以<strong>控制路由访问权限</strong>。</p>
+          </blockquote>
+          <p><img
+              src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220915204418640.png"
+              referrerpolicy="no-referrer" alt="image-20220915204418640"></p>
+          <ul>
+            <li>
+              <p>全局前置守卫</p>
+              <blockquote>
+                <p>
+                  每次发生路由的<strong>导航跳转</strong>时，都会触发<strong>全局前置守卫</strong>。因此，在全局前置守卫中，程序员可以对每个路由进行<strong>访问权限</strong>的控制
+                </p>
+              </blockquote>
+              <pre><code class='language-javascript' lang='javascript'>// router/index.js
+
+// 创建路由实例对象
+const router = new VueRouter({ ... })
+
+const fn = (to, from, next) =&gt; {
+	// to 是将要访问的路由的信息对象
+	// from 是将要离开的路由的信息对象
+	// next 是一个函数，调用 next() 表示放行，允许这次路由导航
+}
+                              
+// 调用路由实例对象的 beforeEach 方法，即声明“全局前置守卫”
+// 每次发送路由导航跳转的时候，都会自动触发 fn 这个“回调函数”
+router.beforeEach(fn)
+
+
+</code></pre>
+              <ul>
+                <li>
+                  <p>当用户拥有后台主页的访问权限，直接放行：<code>next()</code></p>
+                </li>
+                <li>
+                  <p>当前用户没有后台主页的访问权限，强制跳转到登录页面：<code>next(&#39;/login&#39;)</code></p>
+                </li>
+                <li>
+                  <p>当前用户没有后台主页的访问权限，不允许跳转到后台主页：<code>next(false)</code></p>
+                  <p><img
+                      src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/Maekdownimages/Vue2-1/Maekdownimagesimage-20220915220728544.png"
+                      referrerpolicy="no-referrer" alt="image-20220915220728544"></p>
+                </li>
+
+              </ul>
+              <pre><code class='language-javascript' lang='javascript'>const fn = (to, from, next) =&gt; {
+	// to 是将要访问的路由的信息对象
+	// from 是将要离开的路由的信息对象
+	// next 是一个函数，调用 next() 表示放行，允许这次路由导航	
+    // 1.要拿到用户将要访问的 hash 地址
+    // 2.判断 hash 地址是否等于 /main
+    // 2.1 如果等于 /main，证明需要登录后，才能访问成功
+    // 2.2 如果不等于 /main，则不需要登录，直接放行 next()
+    // 3. 如果访问的地址是 /main.则需要读取 localStorage 中的 token 值
+    // 3.1 如果有 token，则放行
+    // 3.2 如果没有 token,则强制跳转到 /login 登录页
+    const pathArr = [&#39;/home&#39;,&#39;/home/users&#39;]
+    // 也可将 hash 地址另存为一个 js / json 文件，导入后使用
+	if(pathArr.indexOf(to.path) !== -1) {
+        const token = localStorage.getItem(&#39;token&#39;)
+        if(token) {
+            next()
+        } else {
+            next(&#39;/login&#39;)
+        }
+    } else {
+        next()
+    }
+}
+</code></pre>
+            </li>
+
+          </ul>
+
+        </main>
+      </div>
+    </section> -->
+
+  </main>
+  <footer class="footer">
+    <div class="information container">
+
+      <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=36048202000057">
+        <img src="https://mdimages-1314620922.cos.ap-guangzhou.myqcloud.com/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png" />
+        赣公网安备&nbsp;36048202000057号&nbsp;赣ICP备2022010008
+      </a>
+    </div>
+  </footer>
+
+</body>
+
 </html>

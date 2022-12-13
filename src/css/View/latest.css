@@ -28,6 +28,11 @@
   gap: 2.4rem;
 }
 
+.latest-page-btn:hover {
+  background-color: #fafafa;
+
+}
+
 .latest-page-btn .iconfont {
   padding: 0.2rem 0.4rem;
   font-size: 2.4rem;
@@ -42,7 +47,7 @@
 }
 
 .latest-page-number:focus {
-  outline: navajowhite;
+  background-color: #fafafa;
 }
 
 .latesr-lists {
@@ -63,8 +68,20 @@
   cursor: pointer;
 }
 
+.latesr-list-img-box {
+  position: relative;
+  padding-top: 66%;
+  overflow: hidden;
+}
+
 .latesr-list-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
+  object-fit: cover;
 }
 
 .latesr-list-content {

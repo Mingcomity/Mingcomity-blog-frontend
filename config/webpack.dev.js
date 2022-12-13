@@ -4,13 +4,16 @@ const ESLintWebpackPlugin = require('eslint-webpack-plugin')
 
 module.exports = {
   // 入口文件
-  entry: './src/main.js',
+  entry: {
+    main: './src/main.js',
+    app: './src/app.js'
+  },
   // 输出
   output: {
     // 所有文件输出目录
     path: undefined,
     // 文件输出名
-    filename: 'static/js/main.js'
+    filename: 'static/js/[name].js'
     // 自动清理path目录资源清空
     // clean: true
   },
