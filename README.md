@@ -1,7 +1,7 @@
 # Mingcomity-blog-frontend
 
 项目上线地址：[mingcomity.cn]()
-后端项目地址：[https://github.com/Mingcomity/Mingcomity-blog-backend]()
+
 笔者自己博客的**前端**项目，使用 HTML、CSS、JavaScript 原生开发，项目使用 Webpack 搭建。
 
 - 项目特点
