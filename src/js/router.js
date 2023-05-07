@@ -1,8 +1,9 @@
 import * as models from './model'
-import Home from './route/home.js'
-import Series from './route/series.js'
-import Date from './route/date.js'
-import Article from './route/article.js'
+// import Home from './route/home.js'
+// import Series from './route/series.js'
+// import Date from './route/date.js'
+// import Article from './route/article.js'
+// import Home from './route/home.js'
 class Router {
   constructor(config) {
     this.routes = {} //保存注册的所有路由
@@ -178,7 +179,9 @@ const config = {
       name: 'home',
       async callback() {
         await models.fetchHome()
-        await new Home()
+        await import('./route/home.js').then(({ Home }) => {
+          new Home()
+        })
       }
     },
     {
@@ -186,7 +189,9 @@ const config = {
       name: 'series',
       async callback(route) {
         await models.fetchSeries(route.query)
-        await new Series()
+        await import('./route/series.js').then(({ Series }) => {
+          new Series()
+        })
       }
     },
     {
@@ -194,7 +199,9 @@ const config = {
       name: 'date',
       async callback(route) {
         await models.fetchDate(route.query)
-        await new Date()
+        await import('./route/date.js').then(({ Date }) => {
+          new Date()
+        })
       }
     },
     {
@@ -202,7 +209,9 @@ const config = {
       name: 'article',
       async callback(route) {
         await models.fetchArt(route.query)
-        await new Article()
+        await import('./route/article.js').then(({ Article }) => {
+          new Article()
+        })
       }
     }
   ]

@@ -1,9 +1,33 @@
 const path = require('path')
+const os = require('os')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ESLintWebpackPlugin = require('eslint-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const PreloadWebpackPlugin = require('@vue/preload-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin')
+
+// cpu核数
+const threads = os.cpus().length
+
+// 获取处理样式的Loaders
+const getStyleLoaders = (preProcessor) => {
+  return [
+    MiniCssExtractPlugin.loader,
+    'css-loader',
+    {
+      loader: 'postcss-loader',
+      options: {
+        postcssOptions: {
+          // 解决大多数样式兼容性问题
+          plugins: ['postcss-preset-env']
+        }
+      }
+    },
+    preProcessor
+  ].filter(Boolean)
+}
 
 module.exports = {
   entry: {
@@ -12,14 +36,12 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
-    // [name]是webpack命名规则，使用chunk的name作为输出的文件名。
-    // 什么是chunk？打包的资源就是chunk，输出出去叫bundle。
-    // chunk的name是啥呢？ 比如： entry中xxx: "./src/xxx.js", name就是xxx。注意是前面的xxx，和文件名无关。
-    // 为什么需要这样命名呢？如果还是之前写法main.js，那么打包生成两个js文件都会叫做main.js会发生覆盖。(实际上会直接报错的)
-    // [contenthash:8]使用contenthash，取8位长度
-    filename: 'static/js/[name].[contenthash:8].js', // 入口文件打包输出资源命名方式
-    chunkFilename: 'static/js/[name].[contenthash:8].chunk.js', // 动态导入输出资源命名方式
-    assetModuleFilename: 'static/media/[name].[hash][ext]', // 图片、字体等资源命名方式（注意用hash）
+    // 入口文件打包输出资源命名方式
+    filename: 'static/js/[name].[contenthash:8].js',
+    // 动态导入输出资源命名方式
+    chunkFilename: 'static/js/[name].[contenthash:8].chunk.js',
+    // 图片、字体等资源命名方式
+    assetModuleFilename: 'static/media/[name].[hash][ext]',
     clean: true
   },
   // 加载器
@@ -28,55 +50,50 @@ module.exports = {
       {
         oneOf: [
           {
-            // 正则匹配文件
             test: /\.css$/,
-            // Loader 执行顺序
-            use: [
-              MiniCssExtractPlugin.loader,
-              'css-loader',
-              {
-                loader: 'postcss-loader',
-                options: {
-                  postcssOptions: {
-                    plugins: ['postcss-preset-env']
-                  }
-                }
-              }
-            ]
+            use: ['style-loader', 'css-loader']
+          },
+          {
+            test: /\.less$/,
+            use: ['style-loader', 'css-loader', 'less-loader']
+          },
+          {
+            test: /\.s[ac]ss$/,
+            use: ['style-loader', 'css-loader', 'sass-loader']
+          },
+          {
+            test: /\.styl$/,
+            use: ['style-loader', 'css-loader', 'stylus-loader']
           },
           {
             test: /\.(png|jpe?g|gif|webp)$/,
-            // 转 base64
             type: 'asset',
             parser: {
               dataUrlCondition: {
-                // 小于 10kb 的会被 base64 处理
                 maxSize: 10 * 1024
               }
+            },
+            generator: {
+              filename: 'static/imgs/[hash:8][ext][query]'
             }
-            // generator: {
-            //   // 将图片文件输出到 static/imgs 目录中
-            //   // 将图片文件命名 [hash:8][ext][query]
-            //   // [hash:8]: hash值取8位
-            //   // [ext]: 使用之前的文件扩展名
-            //   // [query]: 添加之前的query参数
-            //   filename: 'static/imgs/[hash:8][ext][query]'
-            // }
           },
           {
-            test: /\.(ttf|woff2?)$/,
-            // 原封输出
-            type: 'asset/resource'
-            // generator: {
-            //   filename: 'static/media/[hash:8][ext][query]'
-            // }
+            test: /\.(ttf|woff2?|map4|map3|avi)$/,
+            type: 'asset/resource',
+            generator: {
+              filename: 'static/media/[hash:8][ext][query]'
+            }
           },
           {
             test: /\.js$/,
-            exclude: /node_modules/, // 排除node_modules代码不编译
+            include: path.resolve(__dirname, '../src'),
             loader: 'babel-loader',
             options: {
-              plugins: ['@babel/plugin-transform-runtime'] // 减少代码体积
+              // 开启babel、eslint缓存
+              cacheDirectory: true,
+              // 缓存文件不进行压缩
+              cacheCompression: false,
+              plugins: ['@babel/plugin-transform-runtime']
             }
           }
         ]
@@ -85,36 +102,52 @@ module.exports = {
   },
   // 插件
   plugins: [
+    // html文件配置
     new HtmlWebpackPlugin({
-      // 以该文件为模板创建文件
       template: path.resolve(__dirname, '../src/index.html')
     }),
+    // eslint配置
     new ESLintWebpackPlugin({
-      // 指定检查文件的根目录
-      context: path.resolve(__dirname, '../src')
+      context: path.resolve(__dirname, '../src'),
+      exclude: 'node_modules',
+      cache: true,
+      cacheLocation: path.resolve(
+        __dirname,
+        '../node_modules/.cache/.eslintcache'
+      ),
+      threads
     }),
+    // 提取css成单独文件
     new MiniCssExtractPlugin({
-      // 定义输出文件名和目录
       filename: 'static/css/[name].[contenthash:8].css',
       chunkFilename: 'static/css/[name].[contenthash:8].chunk.css'
     }),
-    new CssMinimizerPlugin(),
     new PreloadWebpackPlugin({
-      rel: 'preload', // preload兼容性更好
+      rel: 'Prefetch',
       as: 'script'
-      // rel: 'prefetch' // prefetch兼容性更差
+    }),
+    new WorkboxPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true
     })
   ],
-  // // 代码分割配置
-  // splitChunks: {
-  //   chunks: 'all' // 对所有模块都进行分割
-  //   // 其他内容用默认配置即可
-  // },
-  // // 提取runtime文件
-  // runtimeChunk: {
-  //   name: (entrypoint) => `runtime~${entrypoint.name}` // runtime文件命名规则
-  // },
-  // 模式
-  mode: 'production',
-  devtool: 'source-map'
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new CssMinimizerPlugin(),
+      new TerserPlugin({
+        parallel: threads // 开启多进程
+      })
+    ],
+    // 代码分割配置
+    splitChunks: {
+      chunks: 'all' // 对所有模块都进行分割
+    },
+    // 提取runtime文件
+    runtimeChunk: {
+      name: (entrypoint) => `runtime~${entrypoint.name}` // runtime文件命名规则
+    }
+  },
+
+  mode: 'production'
 }

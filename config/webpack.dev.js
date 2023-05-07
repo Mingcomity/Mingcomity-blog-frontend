@@ -10,12 +10,8 @@ module.exports = {
   },
   // 输出
   output: {
-    // 所有文件输出目录
     path: undefined,
-    // 文件输出名
     filename: 'static/js/[name].js'
-    // 自动清理path目录资源清空
-    // clean: true
   },
   // 加载器
   module: {
@@ -23,33 +19,35 @@ module.exports = {
       {
         oneOf: [
           {
-            // 正则匹配文件
             test: /\.css$/,
-            // Loader 执行顺序
             use: ['style-loader', 'css-loader']
           },
           {
+            test: /\.less$/,
+            use: ['style-loader', 'css-loader', 'less-loader']
+          },
+          {
+            test: /\.s[ac]ss$/,
+            use: ['style-loader', 'css-loader', 'sass-loader']
+          },
+          {
+            test: /\.styl$/,
+            use: ['style-loader', 'css-loader', 'stylus-loader']
+          },
+          {
             test: /\.(png|jpe?g|gif|webp)$/,
-            // 转 base64
             type: 'asset',
             parser: {
               dataUrlCondition: {
-                // 小于 10kb 的会被 base64 处理
                 maxSize: 10 * 1024
               }
             },
             generator: {
-              // 将图片文件输出到 static/imgs 目录中
-              // 将图片文件命名 [hash:8][ext][query]
-              // [hash:8]: hash值取8位
-              // [ext]: 使用之前的文件扩展名
-              // [query]: 添加之前的query参数
               filename: 'static/imgs/[hash:8][ext][query]'
             }
           },
           {
-            test: /\.(ttf|woff2?)$/,
-            // 原封输出
+            test: /\.(ttf|woff2?|map4|map3|avi)$/,
             type: 'asset/resource',
             generator: {
               filename: 'static/media/[hash:8][ext][query]'
@@ -57,12 +55,14 @@ module.exports = {
           },
           {
             test: /\.js$/,
-            exclude: /node_modules/, // 排除node_modules代码不编译
+            include: path.resolve(__dirname, '../src'),
             loader: 'babel-loader',
             options: {
-              cacheDirectory: true, // 开启babel编译缓存
-              cacheCompression: false, // 缓存文件不要压缩
-              plugins: ['@babel/plugin-transform-runtime'] // 减少代码体积
+              // 开启babel、eslint缓存
+              cacheDirectory: true,
+              // 缓存文件不进行压缩
+              cacheCompression: false,
+              plugins: ['@babel/plugin-transform-runtime']
             }
           }
         ]
@@ -72,15 +72,12 @@ module.exports = {
   // 插件
   plugins: [
     new HtmlWebpackPlugin({
-      // 以该文件为模板创建文件
       template: path.resolve(__dirname, '../src/index.html')
     }),
     new ESLintWebpackPlugin({
-      // 指定检查文件的根目录
       context: path.resolve(__dirname, '../src'),
       exclude: 'node_modules',
-      cache: true, // 开启缓存
-      // 缓存目录
+      cache: true,
       cacheLocation: path.resolve(
         __dirname,
         '../node_modules/.cache/.eslintcache'
@@ -91,12 +88,10 @@ module.exports = {
   devServer: {
     host: 'localhost',
     port: '3000',
-    // 自动打开浏览器
     open: true,
-    // 热模块更新
     hot: true
   },
   // 模式
   mode: 'development',
-  devtool: 'cheap-module-source-map'
+  devtool: 'eval-cheap-module-source-map'
 }

@@ -1,6 +1,6 @@
 import PagingQuery from '../Views/pagingQuery.js'
 import * as models from '../model.js'
-class Series {
+export class Series {
   constructor() {
     this._parentElement = document.querySelector('.main')
     this._data = models.model.home
@@ -146,5 +146,3 @@ class Series {
     this._pageView.innerHTML = markup
   }
 }
-
-export default Series

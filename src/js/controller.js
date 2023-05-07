@@ -90,6 +90,7 @@ const checkFlexGap = function () {
 
   if (!isSupported) document.body.classList.add('no-flexbox-gap')
 }
+// 初始化执行
 const init = function () {
   navDropDownEvent.addHandlerMouseenter(controlDropDownBottom)
   navDropDownEvent.addHandlerMouseleave(controlDropDownTop)

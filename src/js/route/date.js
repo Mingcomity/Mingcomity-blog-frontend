@@ -1,6 +1,6 @@
 import PagingQuery from '../Views/pagingQuery.js'
 import * as models from '../model.js'
-class Date {
+export class Date {
   constructor() {
     this._parentElement = document.querySelector('.main')
     this._data = models.model.home
@@ -143,5 +143,3 @@ class Date {
     this._pageView.innerHTML = markup
   }
 }
-
-export default Date

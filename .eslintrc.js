@@ -16,6 +16,7 @@ module.exports = {
   // 具体检查规则，可覆盖上面所继承规则
   rules: {
     'no-var': 2, // 不能使用 var 定义变量,
-    'no-useless-catch': 1 // 连续抛出错误
+    'no-useless-catch': 1, // 连续抛出错误
+    'no-debugger': 0
   }
 }

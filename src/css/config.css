@@ -66,6 +66,22 @@
   border-radius: 8px;
 }
 
+#React {
+  background-color: #9ccbdb;
+}
+
+#Uniapp {
+  background-color: #ffe8d6;
+}
+
+#Miniprogram {
+  background-color: #D0F0C0;
+}
+
+#Javascript {
+  background-color: #FFEFD5;
+}
+
 #Vue {
   background-color: #e7f4f6;
 }

@@ -1,5 +1,5 @@
 import * as models from '../model.js'
-class Article {
+export class Article {
   constructor() {
     this._parentElement = document.querySelector('.main')
     this._data = models.model.home
@@ -94,5 +94,3 @@ class Article {
     this._parentElement.innerHTML = markup
   }
 }
-
-export default Article
